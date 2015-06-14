@@ -1,0 +1,49 @@
+package gui;
+
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JButton;
+
+public class Login extends JPanel {
+	private JTextField textField;
+	private JPasswordField passwordField;
+	private JButton btnEntrar;
+
+	/**
+	 * Create the panel.
+	 */
+	public Login() {
+		setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(92, 142, 135, 25);
+		add(textField);
+		textField.setColumns(10);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(92, 204, 135, 25);
+		add(passwordField);
+		
+		JLabel lblUsurio = new JLabel("Usu\u00E1rio:");
+		lblUsurio.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblUsurio.setBounds(25, 140, 57, 25);
+		add(lblUsurio);
+		
+		JLabel lblSenha = new JLabel("Senha:");
+		lblSenha.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblSenha.setBounds(25, 202, 46, 25);
+		add(lblSenha);
+		
+		btnEntrar = new JButton("Entrar");
+		btnEntrar.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnEntrar.setBounds(80, 265, 100, 25);
+		add(btnEntrar);
+		setBounds(100, 100, 270, 350);
+		
+
+	}
+
+}

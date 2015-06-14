@@ -1,0 +1,1100 @@
+!SESSION 2015-06-06 23:08:30.993 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\Hugo Gabriel\Documents\GitHub\Redes - Senai
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-06 23:08:54.812
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-06 23:08:54.812
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hugo Gabriel'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-06-10 22:38:58.036 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-10 22:41:25.522
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-10 22:41:25.538
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hugo Gabriel'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-06-13 14:24:08.515 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\Hugo Gabriel\Documents\GitHub\Redes - Senai
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-13 14:24:20.556
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-13 14:24:20.571
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hugo Gabriel'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-06-13 14:26:08.289
+!MESSAGE Git repository clone failed.
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Destination path "Projeto-Senai" already exists and is not an empty directory
+	at org.eclipse.jgit.api.CloneCommand.init(CloneCommand.java:146)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:126)
+	at org.eclipse.egit.core.op.CloneOperation.run(CloneOperation.java:156)
+	at org.eclipse.egit.ui.internal.clone.AbstractGitCloneWizard.executeCloneOperation(AbstractGitCloneWizard.java:433)
+	at org.eclipse.egit.ui.internal.clone.AbstractGitCloneWizard.access$2(AbstractGitCloneWizard.java:426)
+	at org.eclipse.egit.ui.internal.clone.AbstractGitCloneWizard$5.run(AbstractGitCloneWizard.java:387)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-06-13 14:27:21.031
+!MESSAGE Git repository clone failed.
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Destination path "Projeto-Senai" already exists and is not an empty directory
+	at org.eclipse.jgit.api.CloneCommand.init(CloneCommand.java:146)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:126)
+	at org.eclipse.egit.core.op.CloneOperation.run(CloneOperation.java:156)
+	at org.eclipse.egit.ui.internal.clone.AbstractGitCloneWizard.executeCloneOperation(AbstractGitCloneWizard.java:433)
+	at org.eclipse.egit.ui.internal.clone.AbstractGitCloneWizard.access$2(AbstractGitCloneWizard.java:426)
+	at org.eclipse.egit.ui.internal.clone.AbstractGitCloneWizard$5.run(AbstractGitCloneWizard.java:387)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SESSION 2015-06-13 18:11:34.386 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-13 18:11:45.747
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-13 18:11:45.747
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hugo Gabriel'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface 2 0 2015-06-13 20:53:58.060
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-13 20:53:58.060
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d4de20,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.markTaskReadGoToNextUnread,Mark Task Read and Go To Next Unread Task,
+		,
+		Category(org.eclipse.mylyn.tasks.ui.commands,Task Repositories,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@8b7517,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.mylyn.tasks.ui.views.tasks,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-13 20:53:58.060
+!MESSAGE A conflict occurred for ALT+ARROW_DOWN:
+Binding(ALT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.moveLineDown,Move Lines Down,
+		Moves the selected lines down,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@810f2a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.goToNextUnread,Go To Next Unread Task,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@124dda2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.mylyn.tasks.ui.views.tasks,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-13 20:53:58.060
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d405ab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.markTaskReadGoToPreviousUnread,Mark Task Read and Go To Previous Unread Task,
+		,
+		Category(org.eclipse.mylyn.tasks.ui.commands,Task Repositories,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@a5f3cf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.mylyn.tasks.ui.views.tasks,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-13 20:53:58.060
+!MESSAGE A conflict occurred for INSERT:
+Binding(INSERT,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.toggleOverwrite,Toggle Overwrite,
+		Toggle overwrite mode,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1991a01,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(INSERT,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.new.local.task,New Local Task,
+		,
+		Category(org.eclipse.mylyn.tasks.ui.commands,Task Repositories,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@179b987,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.mylyn.tasks.ui.views.tasks,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-13 20:53:58.060
+!MESSAGE A conflict occurred for ALT+SHIFT+U:
+Binding(ALT+SHIFT+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.remove.occurrence.annotations,Remove Occurrence Annotations,
+		Removes the occurrence annotations from the current editor,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14c1a9e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+U,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.markTaskUnread,Mark Task Unread,
+		,
+		Category(org.eclipse.mylyn.tasks.ui.commands,Task Repositories,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@60b4b3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.mylyn.tasks.ui.views.tasks,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-13 20:53:58.060
+!MESSAGE A conflict occurred for ALT+ARROW_UP:
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.moveLineUp,Move Lines Up,
+		Moves the selected lines up,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c6f32c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(ALT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.goToPreviousUnread,Go To Previous Unread Task,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ad3cd8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.mylyn.tasks.ui.views.tasks,,,system)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-06-13 21:34:35.974
+!MESSAGE Designer [1.8.0.r44x201412082350.201506132134]: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+!STACK 0
+java.lang.ClassCastException: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+	at org.eclipse.wb.internal.swing.model.layout.gbl.VirtualConstraintsCreationSupport.<init>(VirtualConstraintsCreationSupport.java:42)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:86)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObject(ExecutionUtils.java:246)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo.getConstraintsFor(GridBagLayoutInfo.java:66)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.getCells(GridBagLayoutSurroundSupport.java:115)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.validateComponents(GridBagLayoutSurroundSupport.java:53)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.addSurroundMenu(SurroundSupport.java:111)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.access$2(SurroundSupport.java:79)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport$1.addContextMenu(SurroundSupport.java:63)
+	at sun.reflect.GeneratedMethodAccessor321.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.ObjectEventListener$$EnhancerByCGLIB$$eeab7e98.addContextMenu(<generated>)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider$1.run(DesignContextMenuProvider.java:115)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider.buildContextMenu(DesignContextMenuProvider.java:112)
+	at org.eclipse.wb.internal.gef.core.MultiSelectionContextMenuProvider.buildContextMenu(MultiSelectionContextMenuProvider.java:63)
+	at org.eclipse.wb.internal.gef.core.ContextMenuProvider$1.menuAboutToShow(ContextMenuProvider.java:44)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:352)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:492)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:487)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:519)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-06-13 21:34:35.987
+!MESSAGE Designer [1.8.0.r44x201412082350.201506132134]: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+!STACK 0
+java.lang.ClassCastException: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+	at org.eclipse.wb.internal.swing.model.layout.gbl.VirtualConstraintsCreationSupport.<init>(VirtualConstraintsCreationSupport.java:42)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:86)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObject(ExecutionUtils.java:246)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo.getConstraintsFor(GridBagLayoutInfo.java:66)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.getCells(GridBagLayoutSurroundSupport.java:115)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.validateComponents(GridBagLayoutSurroundSupport.java:53)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.addSurroundMenu(SurroundSupport.java:111)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.access$2(SurroundSupport.java:79)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport$1.addContextMenu(SurroundSupport.java:63)
+	at sun.reflect.GeneratedMethodAccessor321.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.ObjectEventListener$$EnhancerByCGLIB$$eeab7e98.addContextMenu(<generated>)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider$1.run(DesignContextMenuProvider.java:115)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider.buildContextMenu(DesignContextMenuProvider.java:112)
+	at org.eclipse.wb.internal.gef.core.MultiSelectionContextMenuProvider.buildContextMenu(MultiSelectionContextMenuProvider.java:63)
+	at org.eclipse.wb.internal.gef.core.ContextMenuProvider$1.menuAboutToShow(ContextMenuProvider.java:44)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:352)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:492)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:487)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:519)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-06-13 21:34:35.996
+!MESSAGE Designer [1.8.0.r44x201412082350.201506132134]: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+!STACK 0
+java.lang.ClassCastException: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+	at org.eclipse.wb.internal.swing.model.layout.gbl.VirtualConstraintsCreationSupport.<init>(VirtualConstraintsCreationSupport.java:42)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:86)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObject(ExecutionUtils.java:246)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo.getConstraintsFor(GridBagLayoutInfo.java:66)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.getCells(GridBagLayoutSurroundSupport.java:115)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.validateComponents(GridBagLayoutSurroundSupport.java:53)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.addSurroundMenu(SurroundSupport.java:111)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.access$2(SurroundSupport.java:79)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport$1.addContextMenu(SurroundSupport.java:63)
+	at sun.reflect.GeneratedMethodAccessor321.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.ObjectEventListener$$EnhancerByCGLIB$$eeab7e98.addContextMenu(<generated>)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider$1.run(DesignContextMenuProvider.java:115)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider.buildContextMenu(DesignContextMenuProvider.java:112)
+	at org.eclipse.wb.internal.gef.core.MultiSelectionContextMenuProvider.buildContextMenu(MultiSelectionContextMenuProvider.java:63)
+	at org.eclipse.wb.internal.gef.core.ContextMenuProvider$1.menuAboutToShow(ContextMenuProvider.java:44)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:352)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:492)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:487)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:519)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-06-13 21:34:36.003
+!MESSAGE Designer [1.8.0.r44x201412082350.201506132134]: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+!STACK 0
+java.lang.ClassCastException: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+	at org.eclipse.wb.internal.swing.model.layout.gbl.VirtualConstraintsCreationSupport.<init>(VirtualConstraintsCreationSupport.java:42)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:86)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObject(ExecutionUtils.java:246)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo.getConstraintsFor(GridBagLayoutInfo.java:66)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.getCells(GridBagLayoutSurroundSupport.java:115)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.validateComponents(GridBagLayoutSurroundSupport.java:53)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.addSurroundMenu(SurroundSupport.java:111)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.access$2(SurroundSupport.java:79)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport$1.addContextMenu(SurroundSupport.java:63)
+	at sun.reflect.GeneratedMethodAccessor321.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.ObjectEventListener$$EnhancerByCGLIB$$eeab7e98.addContextMenu(<generated>)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider$1.run(DesignContextMenuProvider.java:115)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider.buildContextMenu(DesignContextMenuProvider.java:112)
+	at org.eclipse.wb.internal.gef.core.MultiSelectionContextMenuProvider.buildContextMenu(MultiSelectionContextMenuProvider.java:63)
+	at org.eclipse.wb.internal.gef.core.ContextMenuProvider$1.menuAboutToShow(ContextMenuProvider.java:44)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:352)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:492)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:487)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:519)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-06-13 21:34:36.011
+!MESSAGE Designer [1.8.0.r44x201412082350.201506132134]: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+!STACK 0
+java.lang.ClassCastException: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+	at org.eclipse.wb.internal.swing.model.layout.gbl.VirtualConstraintsCreationSupport.<init>(VirtualConstraintsCreationSupport.java:42)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:86)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObject(ExecutionUtils.java:246)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo.getConstraintsFor(GridBagLayoutInfo.java:66)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.getCells(GridBagLayoutSurroundSupport.java:115)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.validateComponents(GridBagLayoutSurroundSupport.java:53)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.addSurroundMenu(SurroundSupport.java:111)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.access$2(SurroundSupport.java:79)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport$1.addContextMenu(SurroundSupport.java:63)
+	at sun.reflect.GeneratedMethodAccessor321.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.ObjectEventListener$$EnhancerByCGLIB$$eeab7e98.addContextMenu(<generated>)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider$1.run(DesignContextMenuProvider.java:115)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider.buildContextMenu(DesignContextMenuProvider.java:112)
+	at org.eclipse.wb.internal.gef.core.MultiSelectionContextMenuProvider.buildContextMenu(MultiSelectionContextMenuProvider.java:63)
+	at org.eclipse.wb.internal.gef.core.ContextMenuProvider$1.menuAboutToShow(ContextMenuProvider.java:44)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:352)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:492)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:487)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:519)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2015-06-13 21:50:56.163
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4422)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkParent(Widget.java:286)
+	at org.eclipse.swt.widgets.Widget.<init>(Widget.java:152)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:109)
+	at org.eclipse.swt.widgets.Label.<init>(Label.java:101)
+	at org.eclipse.wb.internal.core.model.property.table.HtmlTooltipHelper.createTooltipControl_Label(HtmlTooltipHelper.java:284)
+	at org.eclipse.wb.internal.core.model.property.table.HtmlTooltipHelper.createTooltipControl(HtmlTooltipHelper.java:70)
+	at org.eclipse.wb.internal.core.model.property.table.HtmlTooltipHelper.createTooltipControl(HtmlTooltipHelper.java:53)
+	at org.eclipse.wb.core.controls.palette.HtmlPaletteTooltipProvider.createTooltipControl(HtmlPaletteTooltipProvider.java:50)
+	at org.eclipse.wb.internal.draw2d.CustomTooltipManager.handleShowCustomTooltip(CustomTooltipManager.java:148)
+	at org.eclipse.wb.internal.draw2d.CustomTooltipManager$2.mouseHover(CustomTooltipManager.java:56)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:208)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2015-06-14 00:43:26.872 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-14 00:43:54.996
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-14 00:43:54.997
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hugo Gabriel'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-06-14 10:29:19.752 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-14 10:29:30.954
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-14 10:29:30.978
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hugo Gabriel'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wb.core 4 4 2015-06-14 10:40:28.451
+!MESSAGE Designer [1.8.0.r44x201412082350.201506141040]: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+!STACK 0
+java.lang.ClassCastException: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+	at org.eclipse.wb.internal.swing.model.layout.gbl.VirtualConstraintsCreationSupport.<init>(VirtualConstraintsCreationSupport.java:42)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:86)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObject(ExecutionUtils.java:246)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo.getConstraintsFor(GridBagLayoutInfo.java:66)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.getCells(GridBagLayoutSurroundSupport.java:115)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.validateComponents(GridBagLayoutSurroundSupport.java:53)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.addSurroundMenu(SurroundSupport.java:111)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.access$2(SurroundSupport.java:79)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport$1.addContextMenu(SurroundSupport.java:63)
+	at sun.reflect.GeneratedMethodAccessor264.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.ObjectEventListener$$EnhancerByCGLIB$$ad4aa56c.addContextMenu(<generated>)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider$1.run(DesignContextMenuProvider.java:115)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider.buildContextMenu(DesignContextMenuProvider.java:112)
+	at org.eclipse.wb.internal.gef.core.MultiSelectionContextMenuProvider.buildContextMenu(MultiSelectionContextMenuProvider.java:56)
+	at org.eclipse.wb.internal.gef.core.ContextMenuProvider$1.menuAboutToShow(ContextMenuProvider.java:44)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:352)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:492)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:487)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:519)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-06-14 10:40:33.480
+!MESSAGE Designer [1.8.0.r44x201412082350.201506141040]: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+!STACK 0
+java.lang.ClassCastException: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+	at org.eclipse.wb.internal.swing.model.layout.gbl.VirtualConstraintsCreationSupport.<init>(VirtualConstraintsCreationSupport.java:42)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:86)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObject(ExecutionUtils.java:246)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo.getConstraintsFor(GridBagLayoutInfo.java:66)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.getCells(GridBagLayoutSurroundSupport.java:115)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.validateComponents(GridBagLayoutSurroundSupport.java:53)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.addSurroundMenu(SurroundSupport.java:111)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.access$2(SurroundSupport.java:79)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport$1.addContextMenu(SurroundSupport.java:63)
+	at sun.reflect.GeneratedMethodAccessor264.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.ObjectEventListener$$EnhancerByCGLIB$$ad4aa56c.addContextMenu(<generated>)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider$1.run(DesignContextMenuProvider.java:115)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider.buildContextMenu(DesignContextMenuProvider.java:112)
+	at org.eclipse.wb.internal.gef.core.MultiSelectionContextMenuProvider.buildContextMenu(MultiSelectionContextMenuProvider.java:56)
+	at org.eclipse.wb.internal.gef.core.ContextMenuProvider$1.menuAboutToShow(ContextMenuProvider.java:44)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:352)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:492)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:487)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:519)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-06-14 10:44:04.687
+!MESSAGE Designer [1.8.0.r44x201412082350.201506141040]: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+!STACK 0
+java.lang.ClassCastException: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+	at org.eclipse.wb.internal.swing.model.layout.gbl.VirtualConstraintsCreationSupport.<init>(VirtualConstraintsCreationSupport.java:42)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:86)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObject(ExecutionUtils.java:246)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo.getConstraintsFor(GridBagLayoutInfo.java:66)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.getCells(GridBagLayoutSurroundSupport.java:115)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.validateComponents(GridBagLayoutSurroundSupport.java:53)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.addSurroundMenu(SurroundSupport.java:111)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.access$2(SurroundSupport.java:79)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport$1.addContextMenu(SurroundSupport.java:63)
+	at sun.reflect.GeneratedMethodAccessor264.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.ObjectEventListener$$EnhancerByCGLIB$$ad4aa56c.addContextMenu(<generated>)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider$1.run(DesignContextMenuProvider.java:115)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider.buildContextMenu(DesignContextMenuProvider.java:112)
+	at org.eclipse.wb.internal.gef.core.MultiSelectionContextMenuProvider.buildContextMenu(MultiSelectionContextMenuProvider.java:56)
+	at org.eclipse.wb.internal.gef.core.ContextMenuProvider$1.menuAboutToShow(ContextMenuProvider.java:44)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:352)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:492)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:487)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:519)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-06-14 10:44:41.607
+!MESSAGE Designer [1.8.0.r44x201412082350.201506141040]: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+!STACK 0
+java.lang.ClassCastException: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+	at org.eclipse.wb.internal.swing.model.layout.gbl.VirtualConstraintsCreationSupport.<init>(VirtualConstraintsCreationSupport.java:42)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:86)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObject(ExecutionUtils.java:246)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo.getConstraintsFor(GridBagLayoutInfo.java:66)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.getCells(GridBagLayoutSurroundSupport.java:115)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.validateComponents(GridBagLayoutSurroundSupport.java:53)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.addSurroundMenu(SurroundSupport.java:111)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.access$2(SurroundSupport.java:79)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport$1.addContextMenu(SurroundSupport.java:63)
+	at sun.reflect.GeneratedMethodAccessor264.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.ObjectEventListener$$EnhancerByCGLIB$$ad4aa56c.addContextMenu(<generated>)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider$1.run(DesignContextMenuProvider.java:115)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider.buildContextMenu(DesignContextMenuProvider.java:112)
+	at org.eclipse.wb.internal.gef.core.MultiSelectionContextMenuProvider.buildContextMenu(MultiSelectionContextMenuProvider.java:56)
+	at org.eclipse.wb.internal.gef.core.ContextMenuProvider$1.menuAboutToShow(ContextMenuProvider.java:44)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:352)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:492)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:487)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:519)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.wb.core 4 4 2015-06-14 10:44:47.976
+!MESSAGE Designer [1.8.0.r44x201412082350.201506141040]: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+!STACK 0
+java.lang.ClassCastException: org.eclipse.wb.internal.swing.model.layout.absolute.AbsoluteLayoutInfo cannot be cast to org.eclipse.wb.internal.swing.model.layout.gbl.AbstractGridBagLayoutInfo
+	at org.eclipse.wb.internal.swing.model.layout.gbl.VirtualConstraintsCreationSupport.<init>(VirtualConstraintsCreationSupport.java:42)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:86)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo$1.runObject(GridBagLayoutInfo.java:1)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runObject(ExecutionUtils.java:246)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutInfo.getConstraintsFor(GridBagLayoutInfo.java:66)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.getCells(GridBagLayoutSurroundSupport.java:115)
+	at org.eclipse.wb.internal.swing.model.layout.gbl.GridBagLayoutSurroundSupport.validateComponents(GridBagLayoutSurroundSupport.java:53)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.addSurroundMenu(SurroundSupport.java:111)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport.access$2(SurroundSupport.java:79)
+	at org.eclipse.wb.internal.core.model.util.surround.SurroundSupport$1.addContextMenu(SurroundSupport.java:63)
+	at sun.reflect.GeneratedMethodAccessor264.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.wb.core.model.broadcast.BroadcastSupport$1.intercept(BroadcastSupport.java:208)
+	at org.eclipse.wb.core.model.broadcast.ObjectEventListener$$EnhancerByCGLIB$$ad4aa56c.addContextMenu(<generated>)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider$1.run(DesignContextMenuProvider.java:115)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.DesignContextMenuProvider.buildContextMenu(DesignContextMenuProvider.java:112)
+	at org.eclipse.wb.internal.gef.core.MultiSelectionContextMenuProvider.buildContextMenu(MultiSelectionContextMenuProvider.java:56)
+	at org.eclipse.wb.internal.gef.core.ContextMenuProvider$1.menuAboutToShow(ContextMenuProvider.java:44)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:352)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:492)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:487)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:519)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2015-06-14 10:57:09.560
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4422)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkParent(Widget.java:286)
+	at org.eclipse.swt.widgets.Widget.<init>(Widget.java:152)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:109)
+	at org.eclipse.swt.widgets.Label.<init>(Label.java:101)
+	at org.eclipse.wb.internal.core.model.property.table.HtmlTooltipHelper.createTooltipControl_Label(HtmlTooltipHelper.java:284)
+	at org.eclipse.wb.internal.core.model.property.table.HtmlTooltipHelper.createTooltipControl(HtmlTooltipHelper.java:70)
+	at org.eclipse.wb.internal.core.model.property.table.HtmlTooltipHelper.createTooltipControl(HtmlTooltipHelper.java:53)
+	at org.eclipse.wb.core.controls.palette.HtmlPaletteTooltipProvider.createTooltipControl(HtmlPaletteTooltipProvider.java:50)
+	at org.eclipse.wb.internal.draw2d.CustomTooltipManager.handleShowCustomTooltip(CustomTooltipManager.java:148)
+	at org.eclipse.wb.internal.draw2d.CustomTooltipManager$2.mouseHover(CustomTooltipManager.java:56)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:208)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2015-06-14 10:57:24.275
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4422)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkParent(Widget.java:286)
+	at org.eclipse.swt.widgets.Widget.<init>(Widget.java:152)
+	at org.eclipse.swt.widgets.Control.<init>(Control.java:109)
+	at org.eclipse.swt.widgets.Label.<init>(Label.java:101)
+	at org.eclipse.wb.internal.core.model.property.table.HtmlTooltipHelper.createTooltipControl_Label(HtmlTooltipHelper.java:284)
+	at org.eclipse.wb.internal.core.model.property.table.HtmlTooltipHelper.createTooltipControl(HtmlTooltipHelper.java:70)
+	at org.eclipse.wb.internal.core.model.property.table.HtmlTooltipHelper.createTooltipControl(HtmlTooltipHelper.java:53)
+	at org.eclipse.wb.core.controls.palette.HtmlPaletteTooltipProvider.createTooltipControl(HtmlPaletteTooltipProvider.java:50)
+	at org.eclipse.wb.internal.draw2d.CustomTooltipManager.handleShowCustomTooltip(CustomTooltipManager.java:148)
+	at org.eclipse.wb.internal.draw2d.CustomTooltipManager$2.mouseHover(CustomTooltipManager.java:56)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:208)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2015-06-14 18:42:23.606
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: Widget has the wrong parent)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.IllegalArgumentException: Widget has the wrong parent
+	at org.eclipse.swt.SWT.error(SWT.java:4422)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.MenuItem.setMenu(MenuItem.java:862)
+	at org.eclipse.jface.action.ActionContributionItem$11.run(ActionContributionItem.java:1351)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 23 more

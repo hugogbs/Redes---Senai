@@ -1,0 +1,70 @@
+package Gui;
+
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import java.awt.GridBagLayout;
+
+import javax.swing.JButton;
+
+import java.awt.GridBagConstraints;
+import java.awt.Font;
+
+import javax.swing.JTextArea;
+
+import java.awt.Insets;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class QuestionPanel extends JPanel {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * Create the panel.
+	 */
+	public QuestionPanel() {
+		setLayout(null);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setBounds(60, 30, 805, 96);
+		add(textArea);
+		
+		JTextArea textArea_1 = new JTextArea();
+		textArea_1.setBounds(60, 161, 775, 35);
+		add(textArea_1);
+		
+		JTextArea textArea_2 = new JTextArea();
+		textArea_2.setBounds(60, 231, 775, 35);
+		add(textArea_2);
+		
+		JTextArea textArea_3 = new JTextArea();
+		textArea_3.setBounds(60, 301, 775, 35);
+		add(textArea_3);
+		
+		JTextArea textArea_4 = new JTextArea();
+		textArea_4.setBounds(60, 371, 775, 35);
+		add(textArea_4);
+		
+		JTextArea textArea_5 = new JTextArea();
+		textArea_5.setBounds(60, 441, 775, 35);
+		add(textArea_5);
+		
+		JButton btnResponder = new JButton("Responder");
+		btnResponder.setBounds(361, 511, 99, 25);
+		btnResponder.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				JOptionPane.showConfirmDialog(null, "Você está certo disto?","Confirmação", 0);
+			}
+		});
+		btnResponder.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		add(btnResponder);
+		
+		
+
+	}
+
+}

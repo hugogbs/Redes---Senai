@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Exception.NameException"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="Core.User"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="Gui.MainGame"/>
+<fullyQualifiedTypeName name="Core.Game"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="javax.swing.UIManager"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.nimbus.NimbusLookAndFeel"/>
+<fullyQualifiedTypeName name="Gui.QuestionPanel"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.multi.MultiLookAndFeel"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalLookAndFeel"/>
+<fullyQualifiedTypeName name="Core.Game.Question"/>
+<fullyQualifiedTypeName name="Core.Question"/>
+</qualifiedTypeNameHistroy>

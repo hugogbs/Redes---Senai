@@ -1,0 +1,109 @@
+package Gui;
+
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import java.awt.GridBagLayout;
+
+import javax.swing.JButton;
+
+import java.awt.GridBagConstraints;
+import java.awt.Font;
+
+import javax.swing.JTextArea;
+
+import java.awt.Insets;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class QuestionPanel extends JPanel {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * Create the panel.
+	 */
+	public QuestionPanel() {
+		GridBagLayout gridBagLayout = new GridBagLayout();
+		gridBagLayout.columnWidths = new int[]{0, 0, 348, 269, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+		gridBagLayout.rowHeights = new int[]{0, 101, 0, 40, 0, 40, 15, 40, 0, 40, 0, 40, 0, 0, 0, 0};
+		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		setLayout(gridBagLayout);
+		
+		JTextArea textArea = new JTextArea();
+		GridBagConstraints gbc_textArea = new GridBagConstraints();
+		gbc_textArea.gridwidth = 10;
+		gbc_textArea.insets = new Insets(0, 0, 5, 5);
+		gbc_textArea.fill = GridBagConstraints.BOTH;
+		gbc_textArea.gridx = 2;
+		gbc_textArea.gridy = 1;
+		add(textArea, gbc_textArea);
+		
+		JTextArea textArea_1 = new JTextArea();
+		GridBagConstraints gbc_textArea_1 = new GridBagConstraints();
+		gbc_textArea_1.gridwidth = 9;
+		gbc_textArea_1.insets = new Insets(0, 0, 5, 5);
+		gbc_textArea_1.fill = GridBagConstraints.BOTH;
+		gbc_textArea_1.gridx = 2;
+		gbc_textArea_1.gridy = 3;
+		add(textArea_1, gbc_textArea_1);
+		
+		JTextArea textArea_2 = new JTextArea();
+		GridBagConstraints gbc_textArea_2 = new GridBagConstraints();
+		gbc_textArea_2.gridwidth = 9;
+		gbc_textArea_2.insets = new Insets(0, 0, 5, 5);
+		gbc_textArea_2.fill = GridBagConstraints.BOTH;
+		gbc_textArea_2.gridx = 2;
+		gbc_textArea_2.gridy = 5;
+		add(textArea_2, gbc_textArea_2);
+		
+		JTextArea textArea_3 = new JTextArea();
+		GridBagConstraints gbc_textArea_3 = new GridBagConstraints();
+		gbc_textArea_3.gridwidth = 9;
+		gbc_textArea_3.insets = new Insets(0, 0, 5, 5);
+		gbc_textArea_3.fill = GridBagConstraints.BOTH;
+		gbc_textArea_3.gridx = 2;
+		gbc_textArea_3.gridy = 7;
+		add(textArea_3, gbc_textArea_3);
+		
+		JTextArea textArea_4 = new JTextArea();
+		GridBagConstraints gbc_textArea_4 = new GridBagConstraints();
+		gbc_textArea_4.gridwidth = 9;
+		gbc_textArea_4.insets = new Insets(0, 0, 5, 5);
+		gbc_textArea_4.fill = GridBagConstraints.BOTH;
+		gbc_textArea_4.gridx = 2;
+		gbc_textArea_4.gridy = 9;
+		add(textArea_4, gbc_textArea_4);
+		
+		JTextArea textArea_5 = new JTextArea();
+		GridBagConstraints gbc_textArea_5 = new GridBagConstraints();
+		gbc_textArea_5.gridwidth = 9;
+		gbc_textArea_5.insets = new Insets(0, 0, 5, 5);
+		gbc_textArea_5.fill = GridBagConstraints.BOTH;
+		gbc_textArea_5.gridx = 2;
+		gbc_textArea_5.gridy = 11;
+		add(textArea_5, gbc_textArea_5);
+		
+		JButton btnResponder = new JButton("Responder");
+		btnResponder.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				JOptionPane.showConfirmDialog(null, "Você está certo disto?","Confirmação", 0);
+			}
+		});
+		btnResponder.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		GridBagConstraints gbc_btnResponder = new GridBagConstraints();
+		gbc_btnResponder.anchor = GridBagConstraints.WEST;
+		gbc_btnResponder.insets = new Insets(0, 0, 5, 5);
+		gbc_btnResponder.gridx = 3;
+		gbc_btnResponder.gridy = 13;
+		add(btnResponder, gbc_btnResponder);
+		
+		
+
+	}
+
+}

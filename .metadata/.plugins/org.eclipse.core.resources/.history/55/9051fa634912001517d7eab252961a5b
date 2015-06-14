@@ -1,0 +1,13 @@
+package Core;
+
+import java.util.List;
+
+
+
+public class Game {
+	public class Question {
+
+	}
+	private List<User> users;
+	private List<Question> questions;
+}

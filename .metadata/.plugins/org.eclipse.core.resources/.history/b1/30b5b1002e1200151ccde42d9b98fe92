@@ -1,0 +1,76 @@
+package Gui;
+
+//import javax.swing.plaf.multi;
+import javax.swing.plaf.multi.MultiLookAndFeel;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
+
+import Core.Game;
+
+public class MainGame extends JFrame {
+	private static MainGame janela;
+	private static Game game;
+	private JPanel contentPane;
+	private static JButton btnHome;
+
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+
+				try {
+					UIManager.setLookAndFeel(new MultiLookAndFeel());
+					//UIManager.setLookAndFeel(new NimbusLookAndFeel());
+					setTela(new QuestionPanel());
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public MainGame() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 900, 600);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+	}
+	
+	private static void iniciaSistema() {
+		janela = new MainGame();
+		janela.setVisible(true);
+
+	}
+
+	public static void setTela(JPanel novaTela) {
+		if (janela == null)
+			iniciaSistema();
+
+		if (novaTela == null)
+			System.err.println("Tela inválida");
+		
+		janela.contentPane.removeAll();
+		janela.contentPane.add(novaTela);
+		janela.repaint();
+		janela.revalidate();
+
+	}
+
+}
