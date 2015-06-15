@@ -33,6 +33,6 @@ public class Game implements Serializable{
 	
 	public void addUser(User u) {
 		users.add(u);
-		
 	}
+
 }

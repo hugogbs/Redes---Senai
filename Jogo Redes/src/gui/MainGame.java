@@ -20,7 +20,7 @@ import data.Arquivo;
 import exception.QuestionException;
 import exception.UserException;
 
-public class MainGame extends JFrame implements Serializable{
+public class MainGame extends JFrame implements Serializable {
 	/**
 	 * 
 	 */
@@ -28,42 +28,26 @@ public class MainGame extends JFrame implements Serializable{
 	private static MainGame janela;
 	public static Game game;
 	private JPanel contentPane;
-	private static JButton btnHome;
 
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
-				String texto = "Qual destas pertubações dos canais de comunicação é considerada uma distorção aleatória?";
-				String[] alternativas = new String[] { "RETARDO", "HARMÔNICA",
-						"ATENUAÇÃO", "DIAFONIA", "POLARIZAÇÃO" };				
 				try {
 					UIManager.setLookAndFeel(new NimbusLookAndFeel());
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+
 				criaGame();
-				
-				Question q = null;
-				User u = null;
-				try {
-					q = new Question(texto, alternativas, 3);
-					u = new User("hugo.silva", "hugogbs");
-					game.addUser(u);
-					game.addQuestion(q);
-				} catch (QuestionException | UserException e1) {
-					e1.printStackTrace();
-				}
-				
-				System.out.println(game.getUsers().get(0).getName());
-				System.out.println(game.getUsers().get(0).getPassword());
 				setTela(new Login());
 			}
 		});
 	}
-	
+
 	/**
 	 * Create the frame.
 	 */
@@ -100,6 +84,8 @@ public class MainGame extends JFrame implements Serializable{
 			System.err.println("Tela inválida");
 		if (novaTela instanceof Login)
 			janela.setBounds(novaTela.getBounds());
+		else
+			janela.setBounds(0, 0, 930, 630);
 
 		janela.contentPane.removeAll();
 		janela.contentPane.add(novaTela);

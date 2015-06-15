@@ -26,7 +26,7 @@ public class QuestionPanel extends JPanel implements Serializable{
 	/**
 	 * Create the panel.
 	 */
-	public QuestionPanel(int Number, Question quest) {
+	public QuestionPanel(int Number, Question quest, int pontos) {
 		setLayout(null);
 
 		JTextArea textArea = new JTextArea();
@@ -63,8 +63,17 @@ public class QuestionPanel extends JPanel implements Serializable{
 		btnResponder.setBounds(401, 540, 109, 35);
 		btnResponder.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				JOptionPane.showConfirmDialog(null, "Você está certo disto?",
+				System.out.println(buttonGroup.getSelection());
+				if (buttonGroup.getSelection() == null)
+					JOptionPane.showMessageDialog(null, "Selecione uma resposta primeiro");
+				int value = JOptionPane.showConfirmDialog(null, "Você está certo disto?",
 						"Confirmação", 0);
+				if (value == 0){
+					System.out.println();
+				} else {
+					buttonGroup.setSelected(null, false);
+				}
+				
 			}
 		});
 		btnResponder.setFont(new Font("Tahoma", Font.PLAIN, 15));
@@ -118,11 +127,17 @@ public class QuestionPanel extends JPanel implements Serializable{
 		buttonGroup.add(radioButton_4);
 		radioButton_4.setBounds(44, 475, 109, 35);
 		add(radioButton_4);
+		
 
 		JLabel lblQuesto = new JLabel("Quest\u00E3o " + Number + ":");
 		lblQuesto.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblQuesto.setBounds(25, 22, 184, 25);
 		add(lblQuesto);
+		
+		JLabel lblPontos = new JLabel("Pontos:" + pontos);
+		lblPontos.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblPontos.setBounds(678, 22, 184, 25);
+		add(lblPontos);
 
 	}
 }
