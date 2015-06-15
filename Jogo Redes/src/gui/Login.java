@@ -19,6 +19,10 @@ import java.util.List;
 import java.util.Random;
 
 public class Login extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextField textField;
 	private JPasswordField passwordField;
 	private JButton btnEntrar;

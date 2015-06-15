@@ -11,9 +11,12 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
 import core.Game;
-import core.Question;
 
 public class MainGame extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static MainGame janela;
 	public static Game game;
 	private JPanel contentPane;

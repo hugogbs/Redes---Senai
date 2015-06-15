@@ -1,8 +1,5 @@
 package data;
 
-import java.io.*;
-import java.net.URL;
-import java.net.URLConnection;
 /**
  * Realiza a conexão com a internet, permitindo baixar
  * e upar o usuários pontuaões e etc.
