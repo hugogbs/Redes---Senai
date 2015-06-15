@@ -1,8 +1,14 @@
 package core;
 
+import java.io.Serializable;
+
 import exception.UserException;
 
-public class User {
+public class User implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private String password;
 	private int points;

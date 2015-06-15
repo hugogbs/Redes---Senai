@@ -1,6 +1,8 @@
 package exception;
 
-public class UserException extends Exception{
+import java.io.Serializable;
+
+public class UserException extends Exception implements Serializable{
 	/**
 	 * 
 	 */

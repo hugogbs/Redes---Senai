@@ -15,10 +15,13 @@ import core.User;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.io.Serializable;
 import java.util.List;
 import java.util.Random;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
-public class Login extends JPanel {
+public class Login extends JPanel implements Serializable{
 	/**
 	 * 
 	 */
@@ -34,12 +37,28 @@ public class Login extends JPanel {
 		setLayout(null);
 
 		textField = new JTextField();
-		textField.setBounds(92, 142, 135, 25);
+		textField.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+					passwordField.grabFocus();
+				}
+			}
+		});
+		textField.setBounds(92, 139, 135, 30);
 		add(textField);
 		textField.setColumns(10);
 
 		passwordField = new JPasswordField();
-		passwordField.setBounds(92, 204, 135, 25);
+		passwordField.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent arg0) {
+				if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+					btnEntrar.doClick();
+				}
+			}
+		});
+		passwordField.setBounds(92, 201, 135, 30);
 		add(passwordField);
 
 		JLabel lblUsurio = new JLabel("Usu\u00E1rio:");
@@ -57,25 +76,20 @@ public class Login extends JPanel {
 			public void actionPerformed(ActionEvent arg0) {
 				String name = textField.getText();
 				String pass = String.valueOf(passwordField.getPassword());
+				List<Question> qsts = null;
+				
 				int i = 0;
-				while (true) {
-					try {
-						if (verificaLogin(MainGame.game.getUsers().get(i),
-								name, pass)) {
-							List<Question> qsts = MainGame.game.getQuestions();
-							Random r = new Random();
-							int q = r.nextInt(qsts.size());
-							MainGame.setTela(new QuestionPanel(1, qsts
-									.remove(q)));
-						}
-					} catch (Exception e) {
-						JOptionPane
-								.showMessageDialog(
-										null,
-										"Usuário e/ou senha invalidos!\nVerifique os campos preenchidos!\nOu entre com contato com o adminstrador para obter acesso.");
-						break;
-					}
+				try {
+					while (true)
+						if (verificaLogin(MainGame.game.getUsers().get(i++), name, pass))
+							break;
+				} catch (Exception e) {
+					JOptionPane.showMessageDialog(null,
+							"Usuário e/ou senha invalidos!\nVerifique os campos preenchidos!"
+							+ "\nOu entre com contato com o adminstrador para obter acesso.");
 				}
+				qsts = MainGame.game.getQuestions();
+				MainGame.setTela(new QuestionPanel(1, qsts.remove(0)));
 			}
 
 			private boolean verificaLogin(User user, String name, String pass) {

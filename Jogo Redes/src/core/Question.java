@@ -1,9 +1,15 @@
 package core;
 
+import java.io.Serializable;
+
 import exception.QuestionException;
 
-public class Question {
+public class Question implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String text;
 	private String[] answers;
 	private int idCorrentAnswer;

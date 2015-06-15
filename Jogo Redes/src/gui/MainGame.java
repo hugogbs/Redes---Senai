@@ -2,6 +2,9 @@ package gui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.io.Serializable;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -11,8 +14,13 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
 import core.Game;
+import core.Question;
+import core.User;
+import data.Arquivo;
+import exception.QuestionException;
+import exception.UserException;
 
-public class MainGame extends JFrame {
+public class MainGame extends JFrame implements Serializable{
 	/**
 	 * 
 	 */
@@ -30,38 +38,48 @@ public class MainGame extends JFrame {
 			public void run() {
 				String texto = "Qual destas pertubações dos canais de comunicação é considerada uma distorção aleatória?";
 				String[] alternativas = new String[] { "RETARDO", "HARMÔNICA",
-						"ATENUAÇÃO", "DIAFONIA", "POLARIZAÇÃO" };
+						"ATENUAÇÃO", "DIAFONIA", "POLARIZAÇÃO" };				
 				try {
-					// UIManager.setLookAndFeel(new MetalLookAndFeel());
 					UIManager.setLookAndFeel(new NimbusLookAndFeel());
-					setTela(new Login());
-					// setTela(new QuestionPanel(1, new Question(texto,
-					// alternativas, 3)));
-
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+				criaGame();
+				
+				Question q = null;
+				User u = null;
+				try {
+					q = new Question(texto, alternativas, 3);
+					u = new User("hugo.silva", "hugogbs");
+					game.addUser(u);
+					game.addQuestion(q);
+				} catch (QuestionException | UserException e1) {
+					e1.printStackTrace();
+				}
+				
+				System.out.println(game.getUsers().get(0).getName());
+				System.out.println(game.getUsers().get(0).getPassword());
+				setTela(new Login());
 			}
 		});
 	}
-
+	
 	/**
 	 * Create the frame.
 	 */
 	public MainGame() {
 
-		// addWindowListener(new WindowAdapter() {
-		// @Override
-		// public void windowClosing(WindowEvent e) {
-		// try {
-		// Arquivos.salvaHotel(hotel);
-		// } catch (Exception e1) {
-		// e1.printStackTrace();
-		// }
-		// }
-		// });
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				try {
+					Arquivo.salvaGame(game);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
 		setBounds(100, 100, 900, 630);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -81,7 +99,6 @@ public class MainGame extends JFrame {
 		if (novaTela == null)
 			System.err.println("Tela inválida");
 		if (novaTela instanceof Login)
-			System.out.println(novaTela.getBounds());
 			janela.setBounds(novaTela.getBounds());
 
 		janela.contentPane.removeAll();
@@ -89,6 +106,19 @@ public class MainGame extends JFrame {
 		janela.repaint();
 		janela.revalidate();
 
+	}
+
+	private static void criaGame() {
+		if (Arquivo.extisteGame()) {
+			game = Arquivo.carregaGame();
+		} else {
+			game = new Game();
+			try {
+				Arquivo.salvaGame(game);
+			} catch (Exception e) {
+				System.out.println("Game nao criado");
+			}
+		}
 	}
 
 }

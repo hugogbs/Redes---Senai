@@ -3,6 +3,7 @@ package gui;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Serializable;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -14,7 +15,7 @@ import javax.swing.JTextArea;
 
 import core.Question;
 
-public class QuestionPanel extends JPanel {
+public class QuestionPanel extends JPanel implements Serializable{
 
 	/**
 	 * 
@@ -91,9 +92,7 @@ public class QuestionPanel extends JPanel {
 		textArea_3.setEditable(false);
 		textArea_4.setEditable(false);
 		textArea_5.setEditable(false);
-		textArea.setAlignmentY(CENTER_ALIGNMENT);
-		//textArea_1.setAlignmentX(textArea_1.CENTER_ALIGNMENT);
-		//textArea_1.setAlignmentY(textArea_1.CENTER_ALIGNMENT);
+
 
 		JRadioButton radioButton = new JRadioButton("");
 		buttonGroup.add(radioButton);

@@ -1,6 +1,8 @@
 package exception;
 
-public class QuestionException extends Exception{
+import java.io.Serializable;
+
+public class QuestionException extends Exception implements Serializable{
 
 	/**
 	 * 

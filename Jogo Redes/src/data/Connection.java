@@ -1,5 +1,7 @@
 package data;
 
+import java.io.Serializable;
+
 /**
  * Realiza a conexão com a internet, permitindo baixar
  * e upar o usuários pontuaões e etc.
@@ -8,7 +10,12 @@ package data;
  * Código adaptado de
  * http://moacirrf.com.br/blog/?p=278
  */
-public class Connection {
+public class Connection implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 //	public static void main(String[] args) {
 //		String protocolo = "http";
