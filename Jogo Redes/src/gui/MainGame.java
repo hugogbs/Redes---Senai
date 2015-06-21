@@ -43,6 +43,8 @@ public class MainGame extends JFrame implements Serializable {
 				}
 
 				criaGame();
+				System.out.println(game.getUsers().get(0).getName());
+				System.out.println(game.getUsers().get(0).getPassword());
 				setTela(new Login());
 			}
 		});

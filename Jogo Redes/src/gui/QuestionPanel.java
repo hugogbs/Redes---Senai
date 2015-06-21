@@ -60,7 +60,7 @@ public class QuestionPanel extends JPanel implements Serializable{
 		add(textArea_5);
 
 		JButton btnResponder = new JButton("Responder");
-		btnResponder.setBounds(401, 540, 109, 35);
+		btnResponder.setBounds(394, 540, 121, 35);
 		btnResponder.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				System.out.println(buttonGroup.getSelection());
@@ -76,7 +76,7 @@ public class QuestionPanel extends JPanel implements Serializable{
 				
 			}
 		});
-		btnResponder.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnResponder.setFont(new Font("Tahoma", Font.BOLD, 15));
 		add(btnResponder);
 		
 		textArea.setText(quest.getText());
@@ -138,6 +138,16 @@ public class QuestionPanel extends JPanel implements Serializable{
 		lblPontos.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblPontos.setBounds(678, 22, 184, 25);
 		add(lblPontos);
+		
+		JButton btnDesistir = new JButton("Desistir");
+		btnDesistir.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnDesistir.setBounds(678, 540, 109, 35);
+		add(btnDesistir);
+		
+		JButton btnSair = new JButton("Sair");
+		btnSair.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnSair.setBounds(138, 540, 109, 35);
+		add(btnSair);
 
 	}
 }

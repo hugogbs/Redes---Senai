@@ -18,7 +18,7 @@ import javax.swing.JTextField;
 import core.Question;
 import core.User;
 
-public class Login extends JPanel implements Serializable{
+public class Login extends JPanel implements Serializable {
 	/**
 	 * 
 	 */
@@ -74,23 +74,40 @@ public class Login extends JPanel implements Serializable{
 				String name = textField.getText();
 				String pass = String.valueOf(passwordField.getPassword());
 				List<Question> qsts = null;
-				
+
 				int i = 0;
+				boolean b = false;
 				try {
-					while (true)
-						if (verificaLogin(MainGame.game.getUsers().get(i++), name, pass))
+					while (true) {
+						System.out.println(MainGame.game.getUsers().size());
+						System.out.println(MainGame.game.getUsers().get(0)
+								.getName());
+						System.out.println(MainGame.game.getUsers().get(0)
+								.getPassword());
+						System.out.println(verificaLogin(MainGame.game
+								.getUsers().get(i++), name, pass));
+						if (verificaLogin(MainGame.game.getUsers().get(i++),
+								name, pass)) {
+							b = true;
 							break;
-					qsts = MainGame.game.getQuestions();
-					MainGame.setTela(new QuestionPanel(1, qsts.remove(0), 0));
+						}
+					}
 				} catch (Exception e) {
 					passwordField.setText("");
 					textField.setText("");
-					JOptionPane.showMessageDialog(null,
-							"Usuário e/ou senha invalidos!\nVerifique os campos preenchidos!"
-							+ "\nOu entre com contato com o adminstrador para obter acesso.");
+					JOptionPane
+							.showMessageDialog(
+									null,
+									"Usuário e/ou senha invalidos!\nVerifique os campos preenchidos!"
+											+ "\nOu entre com contato com o adminstrador para obter acesso.");
 				}
-				
+				if (b) {
+					qsts = MainGame.game.getQuestions();
+					MainGame.setTela(new QuestionPanel(1, qsts.remove(0), 0));
+				}
+
 			}
+
 			private boolean verificaLogin(User user, String name, String pass) {
 				if (user.getName().equals(name)
 						&& user.getPassword().equals(pass))
@@ -105,5 +122,4 @@ public class Login extends JPanel implements Serializable{
 		setBounds(100, 100, 270, 350);
 
 	}
-
 }
