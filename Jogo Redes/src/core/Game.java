@@ -16,8 +16,8 @@ public class Game implements Serializable{
 	private List<Question> questions;
 	
 	public Game() {
-		users = new ArrayList();
-		questions = new ArrayList();
+		users = new ArrayList<User>();
+		questions = new ArrayList<Question>();
 	}
 	
 	public List<User> getUsers() {
@@ -28,10 +28,27 @@ public class Game implements Serializable{
 	}
 	
 	public void addQuestion(Question q){
+		for (int i = 0; i < questions.size(); i++) {
+			if (q.equals(questions.get(i)))
+				return;
+		}
 		questions.add(q);		
 	}
 	
+	public void removeUser(String userName) {
+		for (int i = 0; i < users.size(); i++) {
+			if (users.get(i).getUserName().equals(userName)){
+				users.remove(i);
+				return;
+			}
+		}
+	}
+	
 	public void addUser(User u) {
+		for (int i = 0; i < users.size(); i++) {
+			if (u.equals(users.get(i)))
+				return;
+		}
 		users.add(u);
 	}
 

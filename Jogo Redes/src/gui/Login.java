@@ -7,6 +7,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.Serializable;
 import java.util.List;
+import java.util.Random;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -15,7 +16,6 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-import core.Question;
 import core.User;
 
 public class Login extends JPanel implements Serializable {
@@ -73,26 +73,24 @@ public class Login extends JPanel implements Serializable {
 			public void actionPerformed(ActionEvent arg0) {
 				String name = textField.getText();
 				String pass = String.valueOf(passwordField.getPassword());
-				List<Question> qsts = null;
 
-				int i = 0;
-				boolean b = false;
-				try {
-					while (true) {
-						System.out.println(MainGame.game.getUsers().size());
-						System.out.println(MainGame.game.getUsers().get(0)
-								.getName());
-						System.out.println(MainGame.game.getUsers().get(0)
-								.getPassword());
-						System.out.println(verificaLogin(MainGame.game
-								.getUsers().get(i++), name, pass));
-						if (verificaLogin(MainGame.game.getUsers().get(i++),
-								name, pass)) {
-							b = true;
-							break;
-						}
+				boolean autentication = false;
+				List<User> players = MainGame.game.getUsers();
+				for (int i = 0; i < players.size(); i++) {
+					if (players.get(i).getUserName().equals(name)
+							&& players.get(i).getPassword().equals(pass)) {
+						MainGame.player = players.get(i);
+						autentication = true;
+						break;
 					}
-				} catch (Exception e) {
+				}
+				
+				if (autentication) {
+					Random r = new Random();
+					MainGame.setTela(new QuestionPanel(1, MainGame.questoes
+							.remove(r.nextInt(MainGame.questoes.size()))));
+
+				} else {
 					passwordField.setText("");
 					textField.setText("");
 					JOptionPane
@@ -101,18 +99,7 @@ public class Login extends JPanel implements Serializable {
 									"Usuário e/ou senha invalidos!\nVerifique os campos preenchidos!"
 											+ "\nOu entre com contato com o adminstrador para obter acesso.");
 				}
-				if (b) {
-					qsts = MainGame.game.getQuestions();
-					MainGame.setTela(new QuestionPanel(1, qsts.remove(0), 0));
-				}
 
-			}
-
-			private boolean verificaLogin(User user, String name, String pass) {
-				if (user.getName().equals(name)
-						&& user.getPassword().equals(pass))
-					return true;
-				return false;
 			}
 
 		});

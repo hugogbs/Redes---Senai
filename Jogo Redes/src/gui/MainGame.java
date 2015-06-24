@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -27,6 +30,9 @@ public class MainGame extends JFrame implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private static MainGame janela;
 	public static Game game;
+	public static List<Question> questoes = new ArrayList<Question>();
+	public static User player;
+	public static int pontos = 0;
 	private JPanel contentPane;
 
 	/**
@@ -42,9 +48,42 @@ public class MainGame extends JFrame implements Serializable {
 					e.printStackTrace();
 				}
 
-				criaGame();
-				System.out.println(game.getUsers().get(0).getName());
-				System.out.println(game.getUsers().get(0).getPassword());
+				criaGame();			
+				// for (int i = 0; i < game.getQuestions().size(); i++) {
+				// System.out.println(game.getQuestions().get(i).getText());
+				// }
+				// System.out.println();
+
+				// String test =
+				// "[POSCOMP 2011] Em relação à transmissão com fibras óticas, considere as afirmativas a seguir."
+				// +
+				// "\n\nI. A velocidade de propagação em uma fibra ótica é muito superior à velocidade de propagação em um cabo coaxial."
+				// +
+				// "\n\nII. Uma fibra monomodo, por permitir à luz se propagar apenas em um modo, permite obter uma taxa em bps bem superior à de uma fibra multimodo."
+				// +
+				// "\n\nIII. Pode-se ter comunicação full-duplex (transmissão simultânea nos dois sentidos) utilizando-se apenas uma fibra única e não um par de fibras."
+				// +
+				// "\n\nIV. A atenuação em fibra ótica ocorre devido principalmente à absorção (produção de calor) e radiação e independe do comprimento de onda utilizado na transmissão da luz."
+				// + "\n\nAssinale a alternativa correta.";
+				//
+				// List<String> r = new ArrayList<>();
+				// r.add("Somente as afirmativas I e IV são corretas.");
+				// r.add("Somente as afirmativas II e III são corretas.");
+				// r.add("Somente as afirmativas III e IV são corretas.");
+				// r.add("Somente as afirmativas I, II e III são corretas.");
+				// r.add("Somente as afirmativas I, II e IV são corretas.");
+				//
+				// Question q;
+				// try {
+				// q = new Question(test, r, 1);
+				// game.addQuestion(q);
+				// System.out.println(game.getQuestions().size());
+				// } catch (QuestionException e) {
+				// // TODO Auto-generated catch block
+				// e.printStackTrace();
+				// }
+				//
+				//
 				setTela(new Login());
 			}
 		});
@@ -107,6 +146,10 @@ public class MainGame extends JFrame implements Serializable {
 				System.out.println("Game nao criado");
 			}
 		}
-	}
+		if (game.getQuestions() != null) {
+			for (int i = 0; i < game.getQuestions().size(); i++)
+				questoes.add(game.getQuestions().get(i));
+		}
 
+	}
 }
