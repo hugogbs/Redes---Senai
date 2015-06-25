@@ -2,15 +2,25 @@ package gui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.SystemColor;
+import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.awt.image.ImageObserver;
+import java.awt.image.ImageProducer;
 import java.io.Serializable;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
@@ -84,7 +94,8 @@ public class MainGame extends JFrame implements Serializable {
 				// }
 				//
 				//
-				setTela(new Login());
+				
+				setTela(new Login());				
 			}
 		});
 	}
@@ -103,12 +114,17 @@ public class MainGame extends JFrame implements Serializable {
 				}
 			}
 		});
-		setBounds(100, 100, 900, 630);
+		setBounds(100, 100, 930, 630);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		
+		URL url = this.getClass().getResource("/icones/icon3.png");    
+		Image iconeTitulo = Toolkit.getDefaultToolkit().getImage(url);    
+		this.setIconImage(iconeTitulo); 
+		this.setTitle("LENE");
+		this.setResizable(false);
 	}
 
 	private static void iniciaSistema() {
@@ -126,7 +142,7 @@ public class MainGame extends JFrame implements Serializable {
 		if (novaTela instanceof Login)
 			janela.setBounds(novaTela.getBounds());
 		else
-			janela.setBounds(0, 0, 930, 630);
+			janela.setBounds(50, 50, 930, 630);
 
 		janela.contentPane.removeAll();
 		janela.contentPane.add(novaTela);

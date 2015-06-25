@@ -9,6 +9,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Random;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -17,6 +18,8 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import core.User;
+import java.awt.Color;
+import java.awt.SystemColor;
 
 public class Login extends JPanel implements Serializable {
 	/**
@@ -31,6 +34,7 @@ public class Login extends JPanel implements Serializable {
 	 * Create the panel.
 	 */
 	public Login() {
+		setBackground(Color.WHITE);
 		setLayout(null);
 
 		textField = new JTextField();
@@ -107,6 +111,12 @@ public class Login extends JPanel implements Serializable {
 		btnEntrar.setBounds(80, 265, 100, 25);
 		add(btnEntrar);
 		setBounds(100, 100, 270, 350);
+		
+		JLabel fundo = new JLabel(new ImageIcon(MainGame.class.getResource("/icones/images.png")));
+		fundo.setBackground(SystemColor.inactiveCaptionBorder);
+		fundo.setBounds(0, 0, 250, 130);
+		add(fundo);
+
 
 	}
 }

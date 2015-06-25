@@ -1,6 +1,7 @@
 package gui;
 
 import java.awt.Font;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.Serializable;
@@ -8,6 +9,7 @@ import java.util.List;
 import java.util.Random;
 
 import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -17,6 +19,16 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
 import core.Question;
+
+import javax.swing.border.BevelBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+
+import java.awt.Color;
+
+import javax.swing.border.EtchedBorder;
+
+import java.awt.SystemColor;
 
 public class QuestionPanel extends JPanel implements Serializable {
 	JRadioButton[] botoes = new JRadioButton[5];
@@ -38,12 +50,12 @@ public class QuestionPanel extends JPanel implements Serializable {
 
 		JLabel lblQuesto = new JLabel("Quest\u00E3o " + Number + ":");
 		lblQuesto.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblQuesto.setBounds(25, 22, 184, 25);
+		lblQuesto.setBounds(25, 11, 184, 25);
 		add(lblQuesto);
 
 		JLabel lblPontos = new JLabel("Pontos: " + MainGame.pontos);
 		lblPontos.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblPontos.setBounds(678, 22, 184, 25);
+		lblPontos.setBounds(678, 11, 184, 25);
 		add(lblPontos);
 
 		JButton btnDesistir = new JButton("Desistir");
@@ -57,12 +69,13 @@ public class QuestionPanel extends JPanel implements Serializable {
 		add(btnSair);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(35, 58, 854, 100);
+		scrollPane.setBounds(25, 46, 854, 122);
 		scrollPane
 				.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		add(scrollPane);
 
 		JTextArea textArea = new JTextArea();
+		textArea.setBorder(new LineBorder(Color.WHITE, 5, true));
 		textArea.setWrapStyleWord(true);
 		textArea.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textArea.setLineWrap(true);
@@ -76,6 +89,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		add(scrollPane2);
 
 		JTextArea textPane = new JTextArea();
+		textPane.setBorder(new LineBorder(Color.WHITE, 5, true));
 		textPane.setWrapStyleWord(true);
 		textPane.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textPane.setLineWrap(true);
@@ -88,6 +102,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		add(scrollPane_1);
 
 		JTextArea textPane_1 = new JTextArea();
+		textPane_1.setBorder(new LineBorder(Color.WHITE, 5, true));
 		textPane_1.setWrapStyleWord(true);
 		textPane_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textPane_1.setLineWrap(true);
@@ -100,6 +115,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		add(scrollPane_2);
 
 		JTextArea textPane_2 = new JTextArea();
+		textPane_2.setBorder(new LineBorder(Color.WHITE, 5, true));
 		textPane_2.setWrapStyleWord(true);
 		textPane_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textPane_2.setLineWrap(true);
@@ -112,6 +128,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		add(scrollPane_3);
 
 		JTextArea textPane_3 = new JTextArea();
+		textPane_3.setBorder(new LineBorder(Color.WHITE, 5, true));
 		textPane_3.setWrapStyleWord(true);
 		textPane_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textPane_3.setLineWrap(true);
@@ -124,6 +141,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		add(scrollPane_4);
 
 		JTextArea textPane_4 = new JTextArea();
+		textPane_4.setBorder(new LineBorder(Color.WHITE, 5, true));
 		textPane_4.setWrapStyleWord(true);
 		textPane_4.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textPane_4.setLineWrap(true);
@@ -131,34 +149,39 @@ public class QuestionPanel extends JPanel implements Serializable {
 		textPane_4.setText(respostas.get(4));
 		scrollPane_4.setViewportView(textPane_4);
 
-		JRadioButton rdbtnA = new JRadioButton("A)");
+		JRadioButton rdbtnA = new JRadioButton(" A)");
+		rdbtnA.setOpaque(false);
 		buttonGroup.add(rdbtnA);
-		rdbtnA.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		rdbtnA.setBounds(35, 198, 109, 23);
+		rdbtnA.setFont(new Font("Tahoma", Font.BOLD, 15));
+		rdbtnA.setBounds(50, 198, 109, 23);
 		add(rdbtnA);
 
-		JRadioButton rdbtnB = new JRadioButton("B)");
+		JRadioButton rdbtnB = new JRadioButton(" B)");
+		rdbtnB.setOpaque(false);
 		buttonGroup.add(rdbtnB);
-		rdbtnB.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		rdbtnB.setBounds(35, 270, 109, 23);
+		rdbtnB.setFont(new Font("Tahoma", Font.BOLD, 15));
+		rdbtnB.setBounds(50, 270, 109, 23);
 		add(rdbtnB);
 
-		JRadioButton rdbtnC = new JRadioButton("C)");
+		JRadioButton rdbtnC = new JRadioButton(" C)");
+		rdbtnC.setOpaque(false);
 		buttonGroup.add(rdbtnC);
-		rdbtnC.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		rdbtnC.setBounds(35, 342, 109, 23);
+		rdbtnC.setFont(new Font("Tahoma", Font.BOLD, 15));
+		rdbtnC.setBounds(50, 342, 109, 23);
 		add(rdbtnC);
 
-		JRadioButton rdbtnD = new JRadioButton("D)");
+		JRadioButton rdbtnD = new JRadioButton(" D)");
+		rdbtnD.setOpaque(false);
 		buttonGroup.add(rdbtnD);
-		rdbtnD.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		rdbtnD.setBounds(35, 417, 109, 23);
+		rdbtnD.setFont(new Font("Tahoma", Font.BOLD, 15));
+		rdbtnD.setBounds(50, 417, 109, 23);
 		add(rdbtnD);
 
-		JRadioButton rdbtnE = new JRadioButton("E)");
+		JRadioButton rdbtnE = new JRadioButton(" E)");
+		rdbtnE.setOpaque(false);
 		buttonGroup.add(rdbtnE);
-		rdbtnE.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		rdbtnE.setBounds(35, 492, 109, 23);
+		rdbtnE.setFont(new Font("Tahoma", Font.BOLD, 15));
+		rdbtnE.setBounds(50, 492, 109, 23);
 		add(rdbtnE);
 
 		botoes[0] = rdbtnA;
@@ -206,6 +229,10 @@ public class QuestionPanel extends JPanel implements Serializable {
 		});
 		btnResponder.setFont(new Font("Tahoma", Font.BOLD, 15));
 		add(btnResponder);
+		
+		JLabel fundo = new JLabel(new ImageIcon(MainGame.class.getResource("/icones/fundo.jpg")));
+		fundo.setBounds(0, 0, 930, 630);
+		add(fundo);
 
 	}
 }
