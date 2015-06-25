@@ -29,7 +29,7 @@ public class Home extends JPanel implements Serializable{
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnNovoJogo.setBounds(328, 115, 233, 87);
+		btnNovoJogo.setBounds(328, 108, 233, 87);
 		add(btnNovoJogo);
 		
 		JButton btnInstrues = new JButton("Instru\u00E7\u00F5es");
