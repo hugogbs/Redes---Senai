@@ -90,10 +90,7 @@ public class Login extends JPanel implements Serializable {
 				}
 				
 				if (autentication) {
-					Random r = new Random();
-					MainGame.setTela(new QuestionPanel(1, MainGame.questoes
-							.remove(r.nextInt(MainGame.questoes.size()))));
-
+					MainGame.setTela(new Home());
 				} else {
 					passwordField.setText("");
 					textField.setText("");

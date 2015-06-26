@@ -58,16 +58,6 @@ public class QuestionPanel extends JPanel implements Serializable {
 		lblPontos.setBounds(678, 11, 184, 25);
 		add(lblPontos);
 
-		JButton btnDesistir = new JButton("Desistir");
-		btnDesistir.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		btnDesistir.setBounds(678, 540, 109, 35);
-		add(btnDesistir);
-
-		JButton btnSair = new JButton("Sair");
-		btnSair.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		btnSair.setBounds(138, 540, 109, 35);
-		add(btnSair);
-
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(25, 46, 854, 122);
 		scrollPane
@@ -189,6 +179,47 @@ public class QuestionPanel extends JPanel implements Serializable {
 		botoes[2] = rdbtnC;
 		botoes[3] = rdbtnD;
 		botoes[4] = rdbtnE;
+		
+		
+		JButton button = new JButton("Desistir");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				MainGame.player.addResolvidos(quest, false);
+				MainGame.erros+=1;
+				JOptionPane.showMessageDialog(null, "Você acertou "
+						+ MainGame.acertos + " e errou " + MainGame.erros
+						+ " das " + MainGame.numQuests
+						+ " questões selecionadas!");
+				MainGame.setTela(new Home());
+			}
+		});
+		button.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		button.setBounds(141, 540, 109, 35);
+		add(button);
+		
+		JButton btnPular = new JButton("Pular");
+		btnPular.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				MainGame.player.addResolvidos(quest, false);
+				MainGame.erros+=1;
+				
+				Random r = new Random();
+				if (Number + 1 <= MainGame.numQuests && MainGame.atual.size() > 0) {
+					MainGame.setTela(new QuestionPanel(Number + 1,
+							MainGame.atual.remove(r
+									.nextInt(MainGame.atual.size()))));
+				} else {
+					JOptionPane.showMessageDialog(null, "Você acertou "
+							+ MainGame.acertos + " e errou " + MainGame.erros
+							+ " das " + MainGame.numQuests
+							+ " questões selecionadas!");
+					MainGame.setTela(new Home());
+				}
+			}
+		});
+		btnPular.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnPular.setBounds(678, 540, 109, 35);
+		add(btnPular);
 
 		JButton btnResponder = new JButton("Responder");
 		btnResponder.setBounds(394, 540, 121, 35);
@@ -209,28 +240,40 @@ public class QuestionPanel extends JPanel implements Serializable {
 						JOptionPane.showMessageDialog(null, "Certa resposta!",
 								"Parabéns", JOptionPane.INFORMATION_MESSAGE);
 						botoes[i].setSelected(false);
-
 						MainGame.pontos += 100;
-						Random r = new Random();
-						MainGame.setTela(new QuestionPanel(Number + 1,
-								MainGame.questoes.remove(r
-										.nextInt(MainGame.questoes.size()))));
 						acertou = true;
+						MainGame.acertos+=1;
 					}
 				}
 
 				if (!acertou) {
 					buttonGroup.setSelected(null, false);
+					MainGame.erros+=1;
 					JOptionPane.showMessageDialog(null, "Resposta errada!",
 							"Tente Novamente", JOptionPane.ERROR_MESSAGE);
-
+				}				
+				MainGame.player.addResolvidos(quest, acertou);
+				
+				
+				Random r = new Random();
+				if (Number + 1 <= MainGame.numQuests && MainGame.atual.size() > 0) {
+					MainGame.setTela(new QuestionPanel(Number + 1,
+							MainGame.atual.remove(r
+									.nextInt(MainGame.atual.size()))));
+				} else {
+					JOptionPane.showMessageDialog(null, "Você acertou "
+							+ MainGame.acertos + " e errou " + MainGame.erros
+							+ " das " + MainGame.numQuests
+							+ " questões selecionadas!", "Resultado", JOptionPane.INFORMATION_MESSAGE);
+					MainGame.setTela(new Home());
 				}
 			}
 		});
 		btnResponder.setFont(new Font("Tahoma", Font.BOLD, 15));
 		add(btnResponder);
-		
-		JLabel fundo = new JLabel(new ImageIcon(MainGame.class.getResource("/icones/fundo.jpg")));
+
+		JLabel fundo = new JLabel(new ImageIcon(
+				MainGame.class.getResource("/icones/fundo.jpg")));
 		fundo.setBounds(0, 0, 930, 630);
 		add(fundo);
 

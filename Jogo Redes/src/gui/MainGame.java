@@ -26,6 +26,8 @@ import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
+import core.ARQuestion;
+import core.CEQuestion;
 import core.Game;
 import core.Question;
 import core.User;
@@ -40,8 +42,13 @@ public class MainGame extends JFrame implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private static MainGame janela;
 	public static Game game;
-	public static List<Question> questoes = new ArrayList<Question>();
+	public static List<Question> todasQuestoes = new ArrayList<Question>();
+	public static List<Question> geralQuestions = new ArrayList<Question>();
+	public static List<CEQuestion> cabeamentoQuestions = new ArrayList<>();
+	public static List<ARQuestion> arquiteturaQuestions = new ArrayList<ARQuestion>();
+	public static List<Question> atual = new ArrayList<Question>();
 	public static User player;
+	public static int numQuests, acertos, erros;
 	public static int pontos = 0;
 	private JPanel contentPane;
 
@@ -57,45 +64,50 @@ public class MainGame extends JFrame implements Serializable {
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-
-				criaGame();			
-				// for (int i = 0; i < game.getQuestions().size(); i++) {
-				// System.out.println(game.getQuestions().get(i).getText());
-				// }
-				// System.out.println();
-
-				// String test =
-				// "[POSCOMP 2011] Em relação à transmissão com fibras óticas, considere as afirmativas a seguir."
-				// +
-				// "\n\nI. A velocidade de propagação em uma fibra ótica é muito superior à velocidade de propagação em um cabo coaxial."
-				// +
-				// "\n\nII. Uma fibra monomodo, por permitir à luz se propagar apenas em um modo, permite obter uma taxa em bps bem superior à de uma fibra multimodo."
-				// +
-				// "\n\nIII. Pode-se ter comunicação full-duplex (transmissão simultânea nos dois sentidos) utilizando-se apenas uma fibra única e não um par de fibras."
-				// +
-				// "\n\nIV. A atenuação em fibra ótica ocorre devido principalmente à absorção (produção de calor) e radiação e independe do comprimento de onda utilizado na transmissão da luz."
-				// + "\n\nAssinale a alternativa correta.";
-				//
-				// List<String> r = new ArrayList<>();
-				// r.add("Somente as afirmativas I e IV são corretas.");
-				// r.add("Somente as afirmativas II e III são corretas.");
-				// r.add("Somente as afirmativas III e IV são corretas.");
-				// r.add("Somente as afirmativas I, II e III são corretas.");
-				// r.add("Somente as afirmativas I, II e IV são corretas.");
-				//
-				// Question q;
-				// try {
-				// q = new Question(test, r, 1);
-				// game.addQuestion(q);
-				// System.out.println(game.getQuestions().size());
-				// } catch (QuestionException e) {
-				// // TODO Auto-generated catch block
-				// e.printStackTrace();
-				// }
-				//
-				//
 				
-				setTela(new Login());				
+
+				criaGame();
+				
+				
+				//game.removeUser("admin");
+//				for (int i = 0; i < game.getUsers().size(); i++) {
+//					game.removeUser(game.getUsers().get(i).getUserName());
+//					
+//				}
+				
+				try {
+					game.addUser(new User("admin", "admin", "admin"));
+				} catch (UserException e2) {
+					// TODO Auto-generated catch block
+					e2.printStackTrace();
+				}
+//				System.out.println(game.getUsers().size());
+//				
+				//System.out.println(todasQuestoes.size());
+				// System.out.println(cabeamentoQuestions.size());
+				// System.out.println(arquiteturaQuestions.size());
+				// System.out.println(geralQuestions.size());
+				
+				//
+				String test = "As distorções sistemáticas são um tipo de perturbação nos canais de comunicação de uma rede e ocorrem sempre que é enviada uma informação ou dado através do canal.\nSabendo disto, qual destas perturbações dos canais de comunicação NÃO é uma distorção sistemática?";
+
+				List<String> r = new ArrayList<>();
+
+				r.add("RETARDO");
+				r.add("HARMÔNICA");
+				r.add("ATENUAÇÃO");
+				r.add("POLARIZAÇÃO");
+				r.add("DIAFONIA");
+				Question q;
+				try {
+					q = new CEQuestion(test, r, 4);
+					game.addCabeamentoQuestion(((CEQuestion) q));
+				} catch (QuestionException e) {
+
+					e.printStackTrace();
+				}
+
+				setTela(new Login());
 			}
 		});
 	}
@@ -119,10 +131,10 @@ public class MainGame extends JFrame implements Serializable {
 		contentPane = new JPanel();
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
-		
-		URL url = this.getClass().getResource("/icones/icon3.png");    
-		Image iconeTitulo = Toolkit.getDefaultToolkit().getImage(url);    
-		this.setIconImage(iconeTitulo); 
+
+		URL url = this.getClass().getResource("/icones/icon3.png");
+		Image iconeTitulo = Toolkit.getDefaultToolkit().getImage(url);
+		this.setIconImage(iconeTitulo);
 		this.setTitle("LENE");
 		this.setResizable(false);
 	}
@@ -162,9 +174,17 @@ public class MainGame extends JFrame implements Serializable {
 				System.out.println("Game nao criado");
 			}
 		}
-		if (game.getQuestions() != null) {
-			for (int i = 0; i < game.getQuestions().size(); i++)
-				questoes.add(game.getQuestions().get(i));
+
+		for (int i = 0; i < game.getAllQuestions().size(); i++) {
+			todasQuestoes.add(game.getAllQuestions().get(i));
+			if (game.getAllQuestions().get(i) instanceof CEQuestion)
+				cabeamentoQuestions.add((CEQuestion) game.getAllQuestions()
+						.get(i));
+			else if (game.getAllQuestions().get(i) instanceof ARQuestion)
+				arquiteturaQuestions.add((ARQuestion) game.getAllQuestions()
+						.get(i));
+			else
+				geralQuestions.add(game.getAllQuestions().get(i));
 		}
 
 	}

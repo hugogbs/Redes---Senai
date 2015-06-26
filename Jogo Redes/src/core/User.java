@@ -1,6 +1,8 @@
 package core;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import exception.UserException;
 
@@ -13,6 +15,8 @@ public class User implements Serializable{
 	private String password;
 	private String userName;
 	private int points;
+	private List<Question> resolvidos;
+	private List<Boolean> acertos;
 
 	public User(String username, String name, String password) throws UserException {
 		if (username == null || username.length() < 5)
@@ -26,6 +30,8 @@ public class User implements Serializable{
 		this.password = password;
 		this.setUserName(username);
 		this.points = 0;
+		this.resolvidos = new ArrayList<Question>();
+		this.acertos = new ArrayList<Boolean>();
 	}
 
 	public String getName() {
@@ -68,6 +74,32 @@ public class User implements Serializable{
 	@Override
 	public String toString() {
 		return "Name: " + name + "\nUsername: " + userName +  "\nPassword: " + password;
+	}
+
+	public List<Question> getResolvidos() {
+		return resolvidos;
+	}
+
+	public void addResolvidos(Question q, boolean acerto) {
+		for (int i = 0; i < resolvidos.size(); i++) {
+			if (q.equals(resolvidos.get(i))){
+					acertos.set(i, acerto);
+					return;
+					}	
+		}
+		resolvidos.add(q);
+		acertos.add(acerto);
+	}
+
+	public List<Boolean> getAcertos() {
+		return acertos;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof User))
+			return false;
+		User u = (User) obj;
+		return getUserName().equals(u.getUserName());
 	}
 
 }

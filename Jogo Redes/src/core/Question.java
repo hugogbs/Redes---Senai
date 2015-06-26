@@ -86,6 +86,6 @@ public class Question implements Serializable{
 		if (!(obj instanceof Question))
 			return false;
 		Question q = (Question) obj;
-		return this.getText().equals(q.getText()) && this.getAnswers().equals(q.getAnswers());
+		return getText().equals(q.getText()) && this.getAnswers().equals(q.getAnswers());
 	}
 }
