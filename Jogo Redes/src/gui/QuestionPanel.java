@@ -1,7 +1,7 @@
 package gui;
 
+import java.awt.Color;
 import java.awt.Font;
-import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.Serializable;
@@ -17,18 +17,9 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-
-import core.Question;
-
-import javax.swing.border.BevelBorder;
-import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 
-import java.awt.Color;
-
-import javax.swing.border.EtchedBorder;
-
-import java.awt.SystemColor;
+import core.Question;
 
 public class QuestionPanel extends JPanel implements Serializable {
 	JRadioButton[] botoes = new JRadioButton[5];
