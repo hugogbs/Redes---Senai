@@ -23,7 +23,7 @@ import core.Question;
 
 public class QuestionPanel extends JPanel implements Serializable {
 	JRadioButton[] botoes = new JRadioButton[5];
-	private List<String> respostas;
+	private String[] respostas;
 
 	/**
 	 * 
@@ -47,7 +47,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		JLabel lblPontos = new JLabel("Pontos: " + MainGame.pontos);
 		lblPontos.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblPontos.setBounds(678, 11, 184, 25);
-		add(lblPontos);
+		//add(lblPontos);
 
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(25, 46, 854, 122);
@@ -75,7 +75,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		textPane.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textPane.setLineWrap(true);
 		textPane.setEditable(false);
-		textPane.setText(respostas.get(0));
+		textPane.setText(respostas[0]);
 		scrollPane2.setViewportView(textPane);
 
 		JScrollPane scrollPane_1 = new JScrollPane();
@@ -88,7 +88,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		textPane_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textPane_1.setLineWrap(true);
 		textPane_1.setEditable(false);
-		textPane_1.setText(respostas.get(1));
+		textPane_1.setText(respostas[1]);
 		scrollPane_1.setViewportView(textPane_1);
 
 		JScrollPane scrollPane_2 = new JScrollPane();
@@ -101,7 +101,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		textPane_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textPane_2.setLineWrap(true);
 		textPane_2.setEditable(false);
-		textPane_2.setText(respostas.get(2));
+		textPane_2.setText(respostas[2]);
 		scrollPane_2.setViewportView(textPane_2);
 
 		JScrollPane scrollPane_3 = new JScrollPane();
@@ -114,7 +114,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		textPane_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textPane_3.setLineWrap(true);
 		textPane_3.setEditable(false);
-		textPane_3.setText(respostas.get(3));
+		textPane_3.setText(respostas[3]);
 		scrollPane_3.setViewportView(textPane_3);
 
 		JScrollPane scrollPane_4 = new JScrollPane();
@@ -127,7 +127,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		textPane_4.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textPane_4.setLineWrap(true);
 		textPane_4.setEditable(false);
-		textPane_4.setText(respostas.get(4));
+		textPane_4.setText(respostas[4]);
 		scrollPane_4.setViewportView(textPane_4);
 
 		JRadioButton rdbtnA = new JRadioButton(" A)");

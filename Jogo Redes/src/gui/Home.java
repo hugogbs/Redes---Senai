@@ -24,7 +24,7 @@ public class Home extends JPanel implements Serializable{
 	public Home() {
 		
 		JButton btnNovoJogo = new JButton("Novo Jogo");
-		btnNovoJogo.setBounds(343, 335, 233, 87);
+		btnNovoJogo.setBounds(343, 170, 233, 87);
 		btnNovoJogo.setFont(new Font("Mistral", Font.PLAIN, 35));
 		btnNovoJogo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -38,18 +38,18 @@ public class Home extends JPanel implements Serializable{
 		add(lene);
 		add(btnNovoJogo);
 		
-		JButton btnInstrues = new JButton("Instru\u00E7\u00F5es");
-		btnInstrues.setBounds(85, 192, 233, 87);
-		btnInstrues.setFont(new Font("Mistral", Font.PLAIN, 35));
-		add(btnInstrues);
-		
 		JButton btnSobre = new JButton("Sobre");
-		btnSobre.setBounds(601, 482, 233, 87);
+		btnSobre.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				MainGame.setTela(new Sobre());
+			}
+		});
+		btnSobre.setBounds(343, 368, 233, 87);
 		btnSobre.setFont(new Font("Mistral", Font.PLAIN, 35));
 		add(btnSobre);
 		
 		JButton btnPontuao = new JButton("Pontua\u00E7\u00E3o");
-		btnPontuao.setBounds(601, 192, 233, 87);
+		btnPontuao.setBounds(343, 269, 233, 87);
 		btnPontuao.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				MainGame.setTela(new Pontuacao());
@@ -59,7 +59,7 @@ public class Home extends JPanel implements Serializable{
 		add(btnPontuao);
 		
 		JButton btnSair = new JButton("Sair");
-		btnSair.setBounds(85, 482, 233, 87);
+		btnSair.setBounds(343, 467, 233, 87);
 		btnSair.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				MainGame.setTela(new Login());

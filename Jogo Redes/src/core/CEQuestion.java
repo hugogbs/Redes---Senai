@@ -1,13 +1,12 @@
 package core;
 
 import java.io.Serializable;
-import java.util.List;
 
 import exception.QuestionException;
 
 public class CEQuestion extends Question implements Serializable {
 
-	public CEQuestion(String text, List<String> answers, int idCorrect)
+	public CEQuestion(String text, String[] answers, int idCorrect)
 			throws QuestionException {
 		super(text, answers, idCorrect);
 		// TODO Auto-generated constructor stub

@@ -22,7 +22,6 @@ import core.Game;
 import core.Question;
 import core.User;
 import data.Arquivo;
-import exception.QuestionException;
 import exception.UserException;
 
 public class MainGame extends JFrame implements Serializable {
@@ -56,14 +55,20 @@ public class MainGame extends JFrame implements Serializable {
 				}
 
 				criaGame();
+				try {
+					game.addUser(new User("Gabriel", "hugogbs", "hugogbs"));
+				} catch (UserException e2) {
+					e2.printStackTrace();
+				}
+				
+				if(game.getUsers().size() == 0){
+					try {
+						game.addUser(new User("Administrador", "admin", "admin"));
+					} catch (UserException e2) {
+						e2.printStackTrace();
+					}					
+				}
 
-				// try {
-				// game.addUser(new User("Gabriel", "hugogbs", "hugogbs"));
-				// game.addUser(new User("Jorge", "jorge", "jorge"));
-				// } catch (UserException e2) {
-				// // TODO Auto-generated catch block
-				// e2.printStackTrace();
-				// }
 				// System.out.println(game.getUsers().size());
 				//
 				// System.out.println(todasQuestoes.size());
@@ -71,25 +76,6 @@ public class MainGame extends JFrame implements Serializable {
 				// System.out.println(arquiteturaQuestions.size());
 				// System.out.println(geralQuestions.size());
 
-				//
-				// String test =
-				// "As distorções sistemáticas são um tipo de perturbação nos canais de comunicação de uma rede e ocorrem sempre que é enviada uma informação ou dado através do canal.\nSabendo disto, qual destas perturbações dos canais de comunicação NÃO é uma distorção sistemática?";
-				//
-				// List<String> r = new ArrayList<>();
-				//
-				// r.add("RETARDO");
-				// r.add("HARMÔNICA");
-				// r.add("ATENUAÇÃO");
-				// r.add("POLARIZAÇÃO");
-				// r.add("DIAFONIA");
-				// Question q;
-				// try {
-				// q = new CEQuestion(test, r, 4);
-				// game.addCabeamentoQuestion(((CEQuestion) q));
-				// } catch (QuestionException e) {
-				//
-				// e.printStackTrace();
-				// }
 
 				setTela(new Login());
 			}

@@ -4,6 +4,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import exception.QuestionException;
+import exception.UserException;
+
 public class Game implements Serializable {
 
 	/**
@@ -22,6 +25,9 @@ public class Game implements Serializable {
 		arquiteturaQuestions = new ArrayList<>();
 		cabeamentoQuestions = new ArrayList<>();
 		allQuestions = new ArrayList<>();
+
+		instanciaQuestoes();
+		instanciaUsuarios();
 	}
 
 	public List<User> getUsers() {
@@ -87,6 +93,258 @@ public class Game implements Serializable {
 		}
 		cabeamentoQuestions.add(q);
 		allQuestions.add(q);
+	}
+
+	private void instanciaQuestoes() {
+		instanciaCabeamentoQsts();
+		instanciaArquiteturaQsts();
+
+	}
+
+	private void instanciaUsuarios() {
+		try {
+
+			addUser(new User("Adminstrador", "admin", "admin"));
+			addUser(new User("Gabriel", "hugobs", "hugobs"));
+			addUser(new User("Jorge", "jorge", "jorge"));
+			addUser(new User("Camila", "camila", "camila"));
+		} catch (UserException e) {
+		}
+
+	}
+
+	private void instanciaCabeamentoQsts() {
+		try {
+			addCabeamentoQuestion(new CEQuestion(
+					"As distorções sistemáticas são um tipo de perturbação nos canais "
+							+ "de comunicação de uma rede e ocorrem sempre que é enviada uma "
+							+ "informação ou dado através do canal.\nSabendo disto, qual destas "
+							+ "perturbações dos canais de comunicação NÃO é uma distorção sistemática?",
+					new String[] { "RETARDO", "HARMÔNICA", "ATENUAÇÃO",
+							"POLARIZAÇÃO", "DIAFONIA" }, 4));
+		} catch (QuestionException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			addCabeamentoQuestion(new CEQuestion(
+					"Vários fatores podem prejudicar a qualidade do sinal de uma transmissão, esses "
+							+ "fatores chamados de perturbações (ou distorções) dos canais de comunicação e "
+							+ "estão divididos em: distorções sistemáticas e distorções aleatórias.\nAssinale "
+							+ "a alternativa que contém apenas distorções aleatórias",
+					new String[] { "AGITAÇÃO DE FASE – ECO - RUÍDO",
+							"RUÍDO - HARMÔNICA - RETARDO",
+							"ECO - CARACTERÍSTICA - RUÍDO",
+							"PHASE HIT - ATENUAÇÃO - ECO",
+							"DIAFONIA – POLARIZAÇÃO - RETARDO" }, 0));
+		} catch (QuestionException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			addCabeamentoQuestion(new CEQuestion(
+					"Abaixo estão alguns tipos de perturbações sistemáticas que ocorrem ao sinal durante sua transmissão e também suas definições. "
+					+ "\n\nAssinale a alternativa que os relacione corretamente."
+							+ "\n\nTermos:\n1- RETARDO         2- ATENUAÇÃO        3- HARMÔNICA"
+							+ "\n\nDefinições:"
+							+ "\nA – Atrasos na frequência de um sinal, chegando a causar deformação no sinal transmitido."
+							+ "\nB – Deformações da perda de potência do sinal, causadas por cabos, filtros, etc."
+							+ "\nC – Chamada também de deformação linear, esse tipo de deformação é causada quando o sinal passa por etapas de amplificação.",
+					new String[] { "1-B 2-A 3-C", "1-A 2-C 3-B", "1-A 2-B 3-C",
+							"1-C 2-B 3-A", "1-C 2-A 3-B" }, 2));
+		} catch (QuestionException e) {
+			e.printStackTrace();
+		}
+		try {
+			addCabeamentoQuestion(new CEQuestion(
+					"Abaixo estão alguns tipos de perturbações aleatórias que podem ocorrer ao sinal durante sua transmissão e também suas definições. "
+					+ "\n\nAssinale a alternativa que os relacione corretamente."
+							+ "\n\nTermos:\n1- ECO         2- RUÍDO        3- DIAFONIA"
+							+ "\n\nDefinições:"
+							+ "\nA – São distúrbios elétricos que ocorrem, ocasionalmente, em uma transmissão. Podem ser classificados em: térmicos e impulsivos."
+							+ "\nB – Também chamado de crosstalk; Ocorre quando um par de fios causa interferência em outro par."
+							+ "\nC – Nos sinais elétricos esse fenômeno é a reflexão do sinal ou de parte dele ao longo do meio.",
+					new String[] { "1-B 2-A 3-C", "1-A 2-C 3-B", "1-A 2-B 3-C",
+							"1-C 2-B 3-A", "1-C 2-A 3-B" }, 4));
+		} catch (QuestionException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			addCabeamentoQuestion(new CEQuestion(
+					"Para elaborar um sistema de cabeamentos estruturado eficaz e imune a interferências é fundamental "
+							+ "conhecer como ele funciona, que parâmetros elétricos estão envolvidos na transmissão de uma informação. "
+							+ "\nJulgue os itens a seguir sobre os parâmetros elétricos que modelam os canais de transmissão"
+							+ "\n\nI - Um corpo é resistente eletricamente quando apresenta dificuldade na condução de corrente elétrica"
+							+ "\n\nII - A indutância atua como um controlador da corrente elétrica e é dependente da frequência. Sua unidade de media é o Farad"
+							+ "\n\nIII - A capacitância mútua é uma característica que os condutores elétricos possuem de absorver energia e armazená-las por um período de tempo"
+							+ "\n\nIV - O ganho de potência de um sinal ao longo de um segmento de cabo é chamado de atenuação e é medido em decibéis."
+							+ "\n\nV – Condutância é medida em Siemens e é o oposto de resistência, ou seja, é a capacidade de conduzir corrente elétrica",
+					new String[] {
+							"Apenas as afirmações I, II e IV são verdadeiras",
+							"Apenas as afirmações I, III e V são verdadeiras",
+							"Apenas as afirmações II, IV e V são verdadeiras",
+							"Apenas as afirmações IV e V são verdadeiras",
+							"Todas as afirmações são verdadeiras" }, 1));
+		} catch (QuestionException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	private void instanciaArquiteturaQsts() {
+		try {
+			addArquiteturaQuestions(new ARQuestion(
+					"Os elementos da rede são requisitos necessários para que ocorra "
+							+ "a transmissão de informações em uma rede de computadores. "
+							+ "\nAssinale a alternativa que lista corretamente esses elementos.",
+					new String[] {
+							"WI-FI, DISPOSITIVOS, REDE LAN, SER HUMANO",
+							"MENSAGEM, DISPOSITIVOS, REDE CLIENTE/SERVIDOR, TCP/IP",
+							"TCP/IP, MEIO FÍSICO, SERVIDOR, MENSAGEM",
+							"REGRAS, DISPOSITIVOS, MEIO FÍSICO, MENSAGEM",
+							"REGRAS, DISPOSITIVOS, SER HUMANO, MENSAGEM" }, 3));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			addArquiteturaQuestions(new ARQuestion(
+					"Os protocolos de comunicação de uma rede são necessários para "
+							+ "organizar a comunicação propriamente dita. São  exemplos de "
+							+ "protocolo: TCP, IP, IPX, UPD. "
+							+ "\nAssinale a alternativa que NÃO corresponde às funções ou definições do protocolo",
+					new String[] {
+							"A informação que precisa ser transmitida entre origem e destino",
+							"Como e quando mensagens de erro e de sistema são passadas entre dispositivos",
+							"O método pelo qual os dispositivos de rede compartilham informações sobre rotas com outras redes",
+							"O formato ou estrutura da mensagem",
+							"A configuração e término das seções de transferência de dados" },
+					0));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			addArquiteturaQuestions(new ARQuestion(
+					"Os dispositivos de uma rede são os equipamentos que se conectam nela para transmitir informações. Podem ser classificados em:"
+							+ "\n\nFinais: originam e geram informações, fazem a interface com o usuário e a rede;"
+							+ "\n\nIntermediários: realizam a comunicação entre dispositivos finais;"
+							+ "\n\nAssinale a alternativa em que os dispositivos são classificados corretamente.",
+					new String[] {
+							"Dispositivos finais: Servidor e Roteador"
+									+ "\nDispositivos intermediários: PC e Switch",
+							"Dispositivos finais: Servidor e PC "
+									+ "\nDispositivos intermediários: Notebook e Switch",
+							"Dispositivos finais: Notebook e Servidor "
+									+ "\nDispositivos intermediários: Hub e Switch",
+							"Dispositivos finais: Roteador e Hub"
+									+ "Dispositivos intermediários: Switch e PC",
+							"Dispositivos finais: Hub e Notebook"
+									+ "\nDispositivos intermediários: PC e Switch" },
+					2));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			addArquiteturaQuestions(new ARQuestion(
+					"Sobre o tipo de comunicação em uma rede de computadores, "
+							+ "assinale a alternativa que define corretamente a comunicação BROADCAST",
+					new String[] {
+							"Um único dispositivo envia uma mensagem para um destino único",
+							"Transmite a informação para todos os dispositivos dentro de uma determinada rede ou sub-rede",
+							"A informação é passada à um determinado grupo de destino dentro da rede",
+							"É a união das comunicações Unicast e Multicast",
+							"Só é possível configurá-la usando cabos de fibra ótica" },
+					1));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			addArquiteturaQuestions(new ARQuestion(
+					"Também chamada de rede local, os computadores que fazem parte desta rede "
+							+ "estão fisicamente localizados em um mesmo espaço físico, tal como uma sala, um andar de um prédio e etc."
+							+ "\n\nA definição acima se refere a uma rede:",
+					new String[] { "MAN", "WAN", "SAN", "WWLAN", "LAN" }, 4));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			addArquiteturaQuestions(new ARQuestion(
+					"Nas redes cliente/servidor as funções de ambos são bem definidas, "
+							+ "o servidor tem a função de fornecer serviços ou recursos para os clientes "
+							+ "da rede, enquanto que o cliente tem a função de utilizar os serviços e recursos oferecidos. "
+							+ "\n\nAssinale a alternativa que descreve uma desvantagem desse tipo de rede",
+					new String[] {
+							"É menos segura que uma rede ponto a ponto",
+							"Não é possível fazer o backup dos dados em um local central",
+							"Exige pessoal e software especializados para a operação e administração da rede",
+							"Cada usuário precisa ser treinado para realizar tarefas administrativas",
+							"Não se adapta os crescimento da rede pois se torna mais difícil de ser gerenciada" },
+					2));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			addArquiteturaQuestions(new ARQuestion(
+					"O modelo de referência OSI é um tipo de abordagem da arquitetura de camadas e é dividido em sete camadas distintas: Física, Enlace, Rede, Transporte, Sessão, Apresentação e Aplicação. "
+							+ "\n\nAssinale a alternativa que define corretamente a camada de aplicação",
+					new String[] {
+							"Fornece a interface de comunicação entre o usuário e a rede",
+							"É responsável pelo endereçamento de rede",
+							"Realiza a transmissão binária através do fio",
+							"Controla o acesso ao meio de rede",
+							"Fornece a estrutura e formatação dos dados" }, 0));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			addArquiteturaQuestions(new ARQuestion(
+					"Qual a função do protocolo HTTP?",
+					new String[] {
+							"Transferir arquivos de um computador para outro, copiando e movendo arquivos de servidores para clientes e vice-versa",
+							"Transferir e-mails entre servidores de e-mail",
+							"Fornecer dinamicamente as informações de comunicação necessárias para dispositivos finais poderem se comunicar",
+							"Transferir páginas da web, hipertextos",
+							"Trocar informações de gerenciamento entre dispositivos de uma rede" },
+					3));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			addArquiteturaQuestions(new ARQuestion(
+					"Este protocolo tem a função de traduzir nomes de domínio em endereços de IPs e vice-versa"
+							+ "\n\nA definição dada refere-se à um protocolo de comunicação",
+					new String[] { "DHCP", "HTTP", "DNS", "FTP", "HTTPS" }, 2));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			addArquiteturaQuestions(new ARQuestion(
+					"Fornece dinamicamente as informações de comunicação necessárias para dispositivos "
+					+ "finais poderem se comunicar tais como IP, máscara, gateway e DNS"
+							+ "\n\nA definição dada refere-se à um protocolo de comunicação",
+					new String[] { "DHCP", "SMTP", "DNS", "HTTPS", "SNMP" }, 0));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
