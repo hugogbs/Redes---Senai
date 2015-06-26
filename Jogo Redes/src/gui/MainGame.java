@@ -54,48 +54,42 @@ public class MainGame extends JFrame implements Serializable {
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-				
 
 				criaGame();
-				
-				
-				//game.removeUser("admin");
-//				for (int i = 0; i < game.getUsers().size(); i++) {
-//					game.removeUser(game.getUsers().get(i).getUserName());
-//					
-//				}
-				
-				try {
-					game.addUser(new User("admin", "admin", "admin"));
-				} catch (UserException e2) {
-					// TODO Auto-generated catch block
-					e2.printStackTrace();
-				}
-//				System.out.println(game.getUsers().size());
-//				
-				//System.out.println(todasQuestoes.size());
+
+				// try {
+				// game.addUser(new User("Gabriel", "hugogbs", "hugogbs"));
+				// game.addUser(new User("Jorge", "jorge", "jorge"));
+				// } catch (UserException e2) {
+				// // TODO Auto-generated catch block
+				// e2.printStackTrace();
+				// }
+				// System.out.println(game.getUsers().size());
+				//
+				// System.out.println(todasQuestoes.size());
 				// System.out.println(cabeamentoQuestions.size());
 				// System.out.println(arquiteturaQuestions.size());
 				// System.out.println(geralQuestions.size());
-				
+
 				//
-				String test = "As distorções sistemáticas são um tipo de perturbação nos canais de comunicação de uma rede e ocorrem sempre que é enviada uma informação ou dado através do canal.\nSabendo disto, qual destas perturbações dos canais de comunicação NÃO é uma distorção sistemática?";
-
-				List<String> r = new ArrayList<>();
-
-				r.add("RETARDO");
-				r.add("HARMÔNICA");
-				r.add("ATENUAÇÃO");
-				r.add("POLARIZAÇÃO");
-				r.add("DIAFONIA");
-				Question q;
-				try {
-					q = new CEQuestion(test, r, 4);
-					game.addCabeamentoQuestion(((CEQuestion) q));
-				} catch (QuestionException e) {
-
-					e.printStackTrace();
-				}
+				// String test =
+				// "As distorções sistemáticas são um tipo de perturbação nos canais de comunicação de uma rede e ocorrem sempre que é enviada uma informação ou dado através do canal.\nSabendo disto, qual destas perturbações dos canais de comunicação NÃO é uma distorção sistemática?";
+				//
+				// List<String> r = new ArrayList<>();
+				//
+				// r.add("RETARDO");
+				// r.add("HARMÔNICA");
+				// r.add("ATENUAÇÃO");
+				// r.add("POLARIZAÇÃO");
+				// r.add("DIAFONIA");
+				// Question q;
+				// try {
+				// q = new CEQuestion(test, r, 4);
+				// game.addCabeamentoQuestion(((CEQuestion) q));
+				// } catch (QuestionException e) {
+				//
+				// e.printStackTrace();
+				// }
 
 				setTela(new Login());
 			}

@@ -18,7 +18,7 @@ public class User implements Serializable{
 	private List<Question> resolvidos;
 	private List<Boolean> acertos;
 
-	public User(String username, String name, String password) throws UserException {
+	public User(String name, String username, String password) throws UserException {
 		if (username == null || username.length() < 5)
 			throw new UserException("Invalid Username");
 		if (name == null || name.length() < 5)
