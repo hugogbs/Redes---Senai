@@ -1,15 +1,13 @@
 package gui;
 
+import java.awt.Font;
+import java.awt.Insets;
+
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import java.awt.Color;
 import javax.swing.JTextArea;
-import java.awt.Font;
-import java.awt.Component;
-import java.awt.ComponentOrientation;
-import java.awt.Insets;
-import javax.swing.JButton;
 
 public class Sobre extends JPanel {
 

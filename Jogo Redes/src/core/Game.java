@@ -96,21 +96,25 @@ public class Game implements Serializable {
 	}
 
 	private void instanciaQuestoes() {
+		
 		instanciaCabeamentoQsts();
 		instanciaArquiteturaQsts();
+		instanciaGeralQsts();
 
 	}
 
 	private void instanciaUsuarios() {
 		try {
-
 			addUser(new User("Adminstrador", "admin", "admin"));
 			addUser(new User("Gabriel", "hugobs", "hugobs"));
 			addUser(new User("Jorge", "jorge", "jorge"));
-			addUser(new User("Camila", "camila", "camila"));
-		} catch (UserException e) {
+		} catch (UserException e) { }
+		
+		for (int i = 1; i < 101; i++) {
+			try {
+				addUser(new User("Aluno" + i, "aluno" + i, "aluno" + i));
+			} catch (UserException e) { }	
 		}
-
 	}
 
 	private void instanciaCabeamentoQsts() {
@@ -144,7 +148,7 @@ public class Game implements Serializable {
 		try {
 			addCabeamentoQuestion(new CEQuestion(
 					"Abaixo estão alguns tipos de perturbações sistemáticas que ocorrem ao sinal durante sua transmissão e também suas definições. "
-					+ "\n\nAssinale a alternativa que os relacione corretamente."
+							+ "\n\nAssinale a alternativa que os relacione corretamente."
 							+ "\n\nTermos:\n1- RETARDO         2- ATENUAÇÃO        3- HARMÔNICA"
 							+ "\n\nDefinições:"
 							+ "\nA – Atrasos na frequência de um sinal, chegando a causar deformação no sinal transmitido."
@@ -158,7 +162,7 @@ public class Game implements Serializable {
 		try {
 			addCabeamentoQuestion(new CEQuestion(
 					"Abaixo estão alguns tipos de perturbações aleatórias que podem ocorrer ao sinal durante sua transmissão e também suas definições. "
-					+ "\n\nAssinale a alternativa que os relacione corretamente."
+							+ "\n\nAssinale a alternativa que os relacione corretamente."
 							+ "\n\nTermos:\n1- ECO         2- RUÍDO        3- DIAFONIA"
 							+ "\n\nDefinições:"
 							+ "\nA – São distúrbios elétricos que ocorrem, ocasionalmente, em uma transmissão. Podem ser classificados em: térmicos e impulsivos."
@@ -334,11 +338,11 @@ public class Game implements Serializable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		try {
 			addArquiteturaQuestions(new ARQuestion(
 					"Fornece dinamicamente as informações de comunicação necessárias para dispositivos "
-					+ "finais poderem se comunicar tais como IP, máscara, gateway e DNS"
+							+ "finais poderem se comunicar tais como IP, máscara, gateway e DNS"
 							+ "\n\nA definição dada refere-se à um protocolo de comunicação",
 					new String[] { "DHCP", "SMTP", "DNS", "HTTPS", "SNMP" }, 0));
 		} catch (QuestionException e) {
@@ -347,4 +351,135 @@ public class Game implements Serializable {
 		}
 	}
 
+	public void instanciaGeralQsts() {
+		
+		
+		try {
+			addGeneralQuestion(new Question(
+					"Quais são os tipos de redes de computadores, assinale a alternativa correta", new String[] {
+							"LAN, MAN, NAN", "MAN, PAN, FAN",
+							"PAN, DAN, WAN", "LAN, MAN, WAN",
+							"LAN, TAM, WAN" }, 3));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			addGeneralQuestion(new Question(
+					"Para a aplicação Web, o agente usuário é:", new String[] {
+							"O monitor do usuário", "O teclado do usuário",
+							"O mouse do usuário", "A internet",
+							"Nenhuma das respostas acima" }, 3));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			addGeneralQuestion(new Question(
+					"A telefonia por Internet roda tipicamente sobre o protocolo:",
+					new String[] { "UDP", "HTTP", "TCP", "IP",
+							"Nenhuma das respostas acima" }, 0));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			addGeneralQuestion(new Question(
+					"O protocolo SMTP é usado para:",
+					new String[] {
+							"Transferir mensagens de um servidor de correio para outro",
+							"Definir o formato dos cabeçalhos de mensagem",
+							"Transferir mensagens de um servidor de correio para um agente usuário",
+							"Baixar um enail do servidor de um email local",
+							"Todas as respostas acima" }, 2));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			addGeneralQuestion(new Question(
+					"Um dos maiores padrões 3G de acesso sem-fio é:",
+					new String[] {
+							"EDGE",	"GPRS", "IS-136", "FTP",
+							"Nenhuma das alternativas anteriores" }, 4));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			addGeneralQuestion(new Question(
+					"Servidores de nome DNS locais:",
+					new String[] {
+							"Fazem cache de registros de recursos e nunca os descartam", 
+							"Fazem cache de registros de recursos, mas descartam-nos após um período de tempo da ordem de alguns dias", 
+							"Nunca fazem cache de registros de recursos", 
+							"Obtêm registros de recursos dos caches Web",
+							"Nenhuma das alternativas anteriores" }, 1));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			addGeneralQuestion(new Question(
+					"Quando um segmento TCP chega a um hospedeiro, a porta ao qual o segmento será dirigido depende:",
+					new String[] {
+							"do endereço IP da fonte do datagrama que encapsulou o segmento", 
+							"do número da porta da fonte", 
+							"do número da porta do destino", 
+							"do conteúdo do segmento",
+							"Todas as alternativas acima"}, 3));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		try {
+			addGeneralQuestion(new Question(
+					"Um quadro de sinalização enviado por um AP (ponto de acesso) inclui:",
+					new String[] {
+							"o SSID do AP", 
+							"o endereço MAC e o SSIP do AP", 
+							"o endereço MAC do AP", 
+							"o ip do AP",
+							"Nenhuma das alternativas"}, 1));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			addGeneralQuestion(new Question(
+					"Que espaço de disco ocupa uma canção MP-3 de 3 minutos?",
+					new String[] {
+							"menos de 100 kbytes", 
+							"entre 1 Mbyte e 10 Mbytes", 
+							"entre 100 kbytes e 1 Mbyte", 
+							"mais de 10 Mbytes",
+							"Nenhuma das alternativas"}, 1));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			addGeneralQuestion(new Question(
+					"Um roteador de serviços diferenciados, distingue entre fluxos de pacote usando",
+					new String[] {
+							"endereço IP de fonte do pacote", 
+							"endereço IP de fonte e marcações do pacote", 
+							"marcações do pacote", 
+							"conteúdo do pacote",
+							"Nenhuma das alternativas"}, 2 ));
+		} catch (QuestionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 }

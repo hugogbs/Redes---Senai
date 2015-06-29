@@ -1,7 +1,6 @@
 package core;
 
 import java.io.Serializable;
-import java.util.List;
 
 import exception.QuestionException;
 

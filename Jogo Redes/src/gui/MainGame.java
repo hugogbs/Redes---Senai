@@ -22,7 +22,6 @@ import core.Game;
 import core.Question;
 import core.User;
 import data.Arquivo;
-import exception.UserException;
 
 public class MainGame extends JFrame implements Serializable {
 	/**
@@ -31,6 +30,7 @@ public class MainGame extends JFrame implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private static MainGame janela;
 	public static Game game;
+	public static String resumo = "";
 	public static List<Question> todasQuestoes = new ArrayList<Question>();
 	public static List<Question> geralQuestions = new ArrayList<Question>();
 	public static List<CEQuestion> cabeamentoQuestions = new ArrayList<>();
@@ -55,28 +55,6 @@ public class MainGame extends JFrame implements Serializable {
 				}
 
 				criaGame();
-				try {
-					game.addUser(new User("Gabriel", "hugogbs", "hugogbs"));
-				} catch (UserException e2) {
-					e2.printStackTrace();
-				}
-				
-				if(game.getUsers().size() == 0){
-					try {
-						game.addUser(new User("Administrador", "admin", "admin"));
-					} catch (UserException e2) {
-						e2.printStackTrace();
-					}					
-				}
-
-				// System.out.println(game.getUsers().size());
-				//
-				// System.out.println(todasQuestoes.size());
-				// System.out.println(cabeamentoQuestions.size());
-				// System.out.println(arquiteturaQuestions.size());
-				// System.out.println(geralQuestions.size());
-
-
 				setTela(new Login());
 			}
 		});

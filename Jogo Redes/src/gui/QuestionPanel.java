@@ -5,7 +5,6 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.Serializable;
-import java.util.List;
 import java.util.Random;
 
 import javax.swing.ButtonGroup;
@@ -19,6 +18,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.border.LineBorder;
 
+import core.Email;
 import core.Question;
 
 public class QuestionPanel extends JPanel implements Serializable {
@@ -47,7 +47,7 @@ public class QuestionPanel extends JPanel implements Serializable {
 		JLabel lblPontos = new JLabel("Pontos: " + MainGame.pontos);
 		lblPontos.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblPontos.setBounds(678, 11, 184, 25);
-		//add(lblPontos);
+		// add(lblPontos);
 
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(25, 46, 854, 122);
@@ -170,40 +170,65 @@ public class QuestionPanel extends JPanel implements Serializable {
 		botoes[2] = rdbtnC;
 		botoes[3] = rdbtnD;
 		botoes[4] = rdbtnE;
-		
-		
+
 		JButton button = new JButton("Desistir");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				MainGame.player.addResolvidos(quest, false);
-				MainGame.erros+=1;
+				MainGame.erros += 1;
+				Email em = new Email();
+				try {
+					em.enviaEmail(MainGame.player.getName(), MainGame.resumo);
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				try {
+					em.enviaEmail(MainGame.resumo, "LeNe Respostas do "
+							+ MainGame.player.getName());
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 				JOptionPane.showMessageDialog(null, "Você acertou "
 						+ MainGame.acertos + " e errou " + MainGame.erros
 						+ " das " + MainGame.numQuests
 						+ " questões selecionadas!");
+
 				MainGame.setTela(new Home());
 			}
 		});
 		button.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		button.setBounds(141, 540, 109, 35);
 		add(button);
-		
+
 		JButton btnPular = new JButton("Pular");
 		btnPular.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+
 				MainGame.player.addResolvidos(quest, false);
-				MainGame.erros+=1;
-				
+				MainGame.erros += 1;
+				String s = "\n" + quest.getText() + "\nPULOU";
+				MainGame.resumo += s;
+
 				Random r = new Random();
-				if (Number + 1 <= MainGame.numQuests && MainGame.atual.size() > 0) {
+				if (Number + 1 <= MainGame.numQuests
+						&& MainGame.atual.size() > 0) {
 					MainGame.setTela(new QuestionPanel(Number + 1,
-							MainGame.atual.remove(r
-									.nextInt(MainGame.atual.size()))));
+							MainGame.atual.remove(r.nextInt(MainGame.atual
+									.size()))));
 				} else {
 					JOptionPane.showMessageDialog(null, "Você acertou "
 							+ MainGame.acertos + " e errou " + MainGame.erros
 							+ " das " + MainGame.numQuests
 							+ " questões selecionadas!");
+					Email e = new Email();
+					try {
+						e.enviaEmail(MainGame.resumo, "LeNe Respostas do "
+								+ MainGame.player.getName());
+					} catch (Exception e1) {
+						e1.printStackTrace();
+					}
 					MainGame.setTela(new Home());
 				}
 			}
@@ -233,29 +258,41 @@ public class QuestionPanel extends JPanel implements Serializable {
 						botoes[i].setSelected(false);
 						MainGame.pontos += 100;
 						acertou = true;
-						MainGame.acertos+=1;
+						MainGame.acertos += 1;
 					}
 				}
 
 				if (!acertou) {
 					buttonGroup.setSelected(null, false);
-					MainGame.erros+=1;
+					MainGame.erros += 1;
 					JOptionPane.showMessageDialog(null, "Resposta errada!",
 							"Tente Novamente", JOptionPane.ERROR_MESSAGE);
-				}				
+				}
+
+				String s = "\n" + quest.getText() + String.valueOf(acertou);
+				MainGame.resumo += s;
+
 				MainGame.player.addResolvidos(quest, acertou);
-				
-				
+
 				Random r = new Random();
-				if (Number + 1 <= MainGame.numQuests && MainGame.atual.size() > 0) {
+				if (Number + 1 <= MainGame.numQuests
+						&& MainGame.atual.size() > 0) {
 					MainGame.setTela(new QuestionPanel(Number + 1,
-							MainGame.atual.remove(r
-									.nextInt(MainGame.atual.size()))));
+							MainGame.atual.remove(r.nextInt(MainGame.atual
+									.size()))));
 				} else {
 					JOptionPane.showMessageDialog(null, "Você acertou "
 							+ MainGame.acertos + " e errou " + MainGame.erros
 							+ " das " + MainGame.numQuests
-							+ " questões selecionadas!", "Resultado", JOptionPane.INFORMATION_MESSAGE);
+							+ " questões selecionadas!", "Resultado",
+							JOptionPane.INFORMATION_MESSAGE);
+					Email e = new Email();
+					try {
+						e.enviaEmail(MainGame.resumo, "LeNe Respostas do "
+								+ MainGame.player.getName());
+					} catch (Exception e1) {
+						e1.printStackTrace();
+					}
 					MainGame.setTela(new Home());
 				}
 			}

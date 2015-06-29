@@ -23,6 +23,9 @@ public class Home extends JPanel implements Serializable{
 	 */
 	public Home() {
 		
+		String n = "\n" + MainGame.player.getName();
+		MainGame.resumo += n;
+		
 		JButton btnNovoJogo = new JButton("Novo Jogo");
 		btnNovoJogo.setBounds(343, 170, 233, 87);
 		btnNovoJogo.setFont(new Font("Mistral", Font.PLAIN, 35));
