@@ -176,20 +176,20 @@ public class QuestionPanel extends JPanel implements Serializable {
 			public void actionPerformed(ActionEvent e) {
 				MainGame.player.addResolvidos(quest, false);
 				MainGame.erros += 1;
-				Email em = new Email();
-				try {
-					em.enviaEmail(MainGame.player.getName(), MainGame.resumo);
-				} catch (Exception e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
-				try {
-					em.enviaEmail(MainGame.resumo, "LeNe Respostas do "
-							+ MainGame.player.getName());
-				} catch (Exception e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
+//				Email em = new Email();
+//				try {
+//					em.enviaEmail(MainGame.player.getName(), MainGame.resumo);
+//				} catch (Exception e1) {
+//					// TODO Auto-generated catch block
+//					e1.printStackTrace();
+//				}
+//				try {
+//					em.enviaEmail(MainGame.resumo, "LeNe Respostas do "
+//							+ MainGame.player.getName());
+//				} catch (Exception e1) {
+//					// TODO Auto-generated catch block
+//					e1.printStackTrace();
+//				}
 				JOptionPane.showMessageDialog(null, "Você acertou "
 						+ MainGame.acertos + " e errou " + MainGame.erros
 						+ " das " + MainGame.numQuests
@@ -222,13 +222,13 @@ public class QuestionPanel extends JPanel implements Serializable {
 							+ MainGame.acertos + " e errou " + MainGame.erros
 							+ " das " + MainGame.numQuests
 							+ " questões selecionadas!");
-					Email e = new Email();
-					try {
-						e.enviaEmail(MainGame.resumo, "LeNe Respostas do "
-								+ MainGame.player.getName());
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
+//					Email e = new Email();
+//					try {
+//						e.enviaEmail(MainGame.resumo, "LeNe Respostas do "
+//								+ MainGame.player.getName());
+//					} catch (Exception e1) {
+//						e1.printStackTrace();
+//					}
 					MainGame.setTela(new Home());
 				}
 			}
@@ -286,13 +286,13 @@ public class QuestionPanel extends JPanel implements Serializable {
 							+ " das " + MainGame.numQuests
 							+ " questões selecionadas!", "Resultado",
 							JOptionPane.INFORMATION_MESSAGE);
-					Email e = new Email();
-					try {
-						e.enviaEmail(MainGame.resumo, "LeNe Respostas do "
-								+ MainGame.player.getName());
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
+//					Email e = new Email();
+//					try {
+//						e.enviaEmail(MainGame.resumo, "LeNe Respostas do "
+//								+ MainGame.player.getName());
+//					} catch (Exception e1) {
+//						e1.printStackTrace();
+//					}
 					MainGame.setTela(new Home());
 				}
 			}
